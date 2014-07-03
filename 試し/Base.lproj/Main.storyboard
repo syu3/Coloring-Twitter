@@ -107,9 +107,9 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmB-4e-cvq">
-                                <rect key="frame" x="20" y="75" width="96" height="100"/>
+                                <rect key="frame" x="20" y="75" width="70" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="yukidaruma.png">
+                                <state key="normal" title="Button" image="雪だるま全体１.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -143,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R8a-Id-raR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-132" y="616"/>
+            <point key="canvasLocation" x="-180" y="616"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5e3-jL-ehw">
@@ -269,7 +269,6 @@
     <resources>
         <image name="kuruma.png" width="886" height="598"/>
         <image name="raion.png" width="700" height="700"/>
-        <image name="yukidaruma.png" width="523" height="598"/>
         <image name="無題.png" width="236" height="376"/>
         <image name="雪だるま 2.png" width="442" height="369"/>
         <image name="雪だるま 3.png" width="442" height="370"/>
@@ -278,6 +277,7 @@
         <image name="雪だるま 6.png" width="442" height="370"/>
         <image name="雪だるま 7.png" width="442" height="370"/>
         <image name="雪だるま.png" width="442" height="370"/>
+        <image name="雪だるま全体１.jpg" width="255" height="469"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
