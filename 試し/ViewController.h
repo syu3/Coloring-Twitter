@@ -11,14 +11,18 @@
 #import <Social/Social.h>
 @interface ViewController : UIViewController{
     UIImageView *canvas;
-    //お絵描きしていくキャンバス(画用紙)を準備します
     CGPoint touchPoint;
-    //お絵描きに使う座標を準備します
-    int rgb;//色を使い分けるために必要
-    IBOutlet UISwitch *keshigom;//UISwitchの宣言
-    IBOutlet UISegmentedControl *seg;//UISegmentの宣言
-    UIImage *capture;
+    UIImage*capure;
+    int rgb;
+
+
 }
--(IBAction)save;
--(void)png;
+-(IBAction)red;
+-(IBAction)green;
+-(IBAction)blue;
+-(IBAction)yellow;
+-(IBAction)black;
+-(IBAction)white;
+-(IBAction)shou;
+-(IBAction)dai;
 @end
