@@ -33,7 +33,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="スクリーンショット 2014-07-12 20.03.27.png" translatesAutoresizingMaskIntoConstraints="NO" id="5hZ-Sl-u0A">
-                                <rect key="frame" x="90" y="-55" width="449" height="475"/>
+                                <rect key="frame" x="90" y="-75" width="449" height="475"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test4.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wn0-D9-SgF">
@@ -329,7 +329,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqT-Gv-Amv">
-                                <rect key="frame" x="0.0" y="113" width="50" height="93"/>
+                                <rect key="frame" x="6" y="113" width="50" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -621,6 +621,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="dVa-so-MXB"/>
         <segue reference="pHX-4P-yZO"/>
-        <segue reference="zwC-1J-CGQ"/>
+        <segue reference="5j2-jz-kdD"/>
     </inferredMetricsTieBreakers>
 </document>
