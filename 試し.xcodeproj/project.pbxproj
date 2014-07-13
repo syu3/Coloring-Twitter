@@ -214,7 +214,6 @@
 				4BD76D991934BA17004F3C19 /* ViewController.h */,
 				4BD76D9A1934BA17004F3C19 /* ViewController.m */,
 				4BD76D9C1934BA17004F3C19 /* Images.xcassets */,
-				4BCA71FD19723A7B00D52114 /* スクリーンショット 2014-07-13 12.54.09.png */,
 				4BD76D8B1934BA17004F3C19 /* Supporting Files */,
 			);
 			path = "試し";
@@ -223,6 +222,7 @@
 		4BD76D8B1934BA17004F3C19 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4BCA71FD19723A7B00D52114 /* スクリーンショット 2014-07-13 12.54.09.png */,
 				4BCA71F81972106400D52114 /* スクリーンショット 2014-07-12 20.03.27.png */,
 				4BCCFE9819693AD800C1FEF4 /* sutoraipu.png */,
 				4B2B596E1970D1C70034B762 /* ゾウイラスト.png */,
