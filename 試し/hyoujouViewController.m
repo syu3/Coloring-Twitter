@@ -27,8 +27,8 @@
 {
     [super viewDidLoad];
     number = 0;
-    hyoujou1.image = [UIImage imageNamed:@"雪だるま"];
-    hyoujou2.image = [UIImage imageNamed:@"雪だるま2"];
+    hyoujou1.image = [UIImage imageNamed:@"雪だるま.png"];
+    hyoujou2.image = [UIImage imageNamed:@"雪だるま2.png"];
     
     
 }
@@ -36,8 +36,8 @@
     
     number=number+1;
     if (number == 0) {
-        hyoujou1.image = [UIImage imageNamed:@"雪だるま"];
-        hyoujou2.image = [UIImage imageNamed:@"雪だるま2"];
+        hyoujou1.image = [UIImage imageNamed:@"雪だるま.png"];
+        hyoujou2.image = [UIImage imageNamed:@"雪だるま2.png"];
         
     }else if (number == 1) {
         hyoujou1.image = [UIImage imageNamed:@"雪だるま3.png"];
