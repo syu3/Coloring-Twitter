@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="sQL-Nc-U6P">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="FHG-tO-piy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="179" y="1381"/>
         </scene>
-        <!--Irauto View Controller-->
+        <!--Irasuto View Controller-->
         <scene sceneID="eJ5-BC-Beq">
             <objects>
-                <viewController id="FHG-tO-piy" customClass="irautoViewController" sceneMemberID="viewController">
+                <viewController id="FHG-tO-piy" customClass="irasutoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KyW-T0-NwL"/>
                         <viewControllerLayoutGuide type="bottom" id="c3h-zA-VSM"/>
@@ -144,6 +144,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="next" destination="FHG-tO-piy" eventType="touchUpInside" id="cpO-UL-chS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUV-rb-dff">
                                 <rect key="frame" x="261" y="57" width="212" height="192"/>
@@ -160,6 +163,11 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="irasuto1" destination="stD-i7-Gi1" id="UXE-xs-c8q"/>
+                        <outlet property="irasuto2" destination="Hv2-JJ-EPc" id="VJo-Z6-Rkr"/>
+                        <outlet property="next" destination="BN7-JN-cEf" id="e2r-JG-dVL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sd5-ho-V0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
