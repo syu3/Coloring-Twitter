@@ -144,9 +144,6 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="next" destination="FHG-tO-piy" eventType="touchUpInside" id="Lcx-SU-yCF"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUV-rb-dff">
                                 <rect key="frame" x="261" y="57" width="212" height="192"/>
@@ -163,15 +160,10 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <outlet property="irasuto1" destination="stD-i7-Gi1" id="Fa2-gu-Wfv"/>
-                        <outlet property="irasuto2" destination="Hv2-JJ-EPc" id="ams-Ff-RMp"/>
-                        <outlet property="next" destination="BN7-JN-cEf" id="miF-3P-HJP"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sd5-ho-V0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1079" y="756"/>
+            <point key="canvasLocation" x="-1021" y="1015"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="k71-Nf-nB6">
@@ -242,6 +234,9 @@
                                 <state key="normal" title="小">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="shou" destination="sQL-Nc-U6P" eventType="touchUpInside" id="UGN-8B-w9e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhr-sf-0Sa">
                                 <rect key="frame" x="316" y="292" width="30" height="30"/>
@@ -249,6 +244,9 @@
                                 <state key="normal" title="大">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="dai" destination="sQL-Nc-U6P" eventType="touchUpInside" id="GHx-rY-bwa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efc-Th-V1a">
                                 <rect key="frame" x="0.0" y="190" width="86" height="30"/>
@@ -314,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8n-IS-wtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-819" y="1143"/>
+            <point key="canvasLocation" x="-459" y="1009"/>
         </scene>
     </scenes>
     <resources>
@@ -341,6 +339,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="teF-Io-fZd"/>
+        <segue reference="wuf-51-CCx"/>
     </inferredMetricsTieBreakers>
 </document>
