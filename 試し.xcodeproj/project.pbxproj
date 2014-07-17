@@ -106,6 +106,7 @@
 		4BCA71FA1972131100D52114 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
 		4BCA71FB197239C400D52114 /* スクリーンショット 2014-07-13 12.50.53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2014-07-13 12.50.53.png"; sourceTree = "<group>"; };
 		4BCA71FD19723A7B00D52114 /* スクリーンショット 2014-07-13 12.54.09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2014-07-13 12.54.09.png"; sourceTree = "<group>"; };
+		4BCACF6A1976945A002D6132 /* hosi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hosi.png; sourceTree = "<group>"; };
 		4BCCFE8519690A6100C1FEF4 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
 		4BCCFE8619690A6100C1FEF4 /* haikei2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei2.png; sourceTree = "<group>"; };
 		4BCCFE8B19691C7B00C1FEF4 /* haikei4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei4.png; sourceTree = "<group>"; };
@@ -116,7 +117,6 @@
 		4BCCFE941969314400C1FEF4 /* haikei7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei7.png; sourceTree = "<group>"; };
 		4BCCFE951969329800C1FEF4 /* 600.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 600.png; sourceTree = "<group>"; };
 		4BCCFE961969371C00C1FEF4 /* hosi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hosi.png; sourceTree = "<group>"; };
-		4BCCFE971969380C00C1FEF4 /* hosi 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hosi 2.png"; sourceTree = "<group>"; };
 		4BCCFE9819693AD800C1FEF4 /* sutoraipu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sutoraipu.png; sourceTree = "<group>"; };
 		4BCF0E4519657207001F8772 /* 雪だるま全体１.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雪だるま全体１.png"; sourceTree = "<group>"; };
 		4BD2BCB51973EAFB00C739F8 /* irasutoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irasutoViewController.h; sourceTree = "<group>"; };
@@ -232,6 +232,7 @@
 		4BD76D8B1934BA17004F3C19 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4BCACF6A1976945A002D6132 /* hosi.png */,
 				4BCA71FD19723A7B00D52114 /* スクリーンショット 2014-07-13 12.54.09.png */,
 				4BCA71F81972106400D52114 /* スクリーンショット 2014-07-12 20.03.27.png */,
 				4BCCFE9819693AD800C1FEF4 /* sutoraipu.png */,
@@ -244,7 +245,6 @@
 				4B2B5983197151CD0034B762 /* Untitled.png */,
 				4B2B597A1970EDE60034B762 /* ゾウ22.png */,
 				4BCCFE941969314400C1FEF4 /* haikei7.png */,
-				4BCCFE971969380C00C1FEF4 /* hosi 2.png */,
 				4BCCFE8F19691FC400C1FEF4 /* hana.png */,
 				4B2B5984197152670034B762 /* test6.png */,
 				4B2B59701970D33E0034B762 /* スクリーンショット 2014-07-12 11.20.31.png */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="d5I-wF-oYB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="FHG-tO-piy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -161,7 +161,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FHG-tO-piy" kind="modal" id="jhD-ni-19Q"/>
+                                    <segue destination="d5I-wF-oYB" kind="modal" id="teF-Io-fZd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -193,14 +193,24 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="雪だるま 2" translatesAutoresizingMaskIntoConstraints="NO" id="X9G-gd-7SM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X9G-gd-7SM">
                                 <rect key="frame" x="-100" y="29" width="381" height="342"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="雪だるま.png" translatesAutoresizingMaskIntoConstraints="NO" id="dez-jh-iiM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dez-jh-iiM">
                                 <rect key="frame" x="208" y="29" width="381" height="342"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pd9-mE-s2X">
+                                <rect key="frame" x="235" y="20" width="245" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WTx-YJ-79G" kind="modal" id="stq-nH-SK2"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nex1t.png" translatesAutoresizingMaskIntoConstraints="NO" id="7yU-tn-cp5">
                                 <rect key="frame" x="430" y="227" width="50" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -225,8 +235,15 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4O-eW-bQb">
+                                <rect key="frame" x="2" y="20" width="245" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <segue destination="d5I-wF-oYB" kind="modal" id="hvm-hS-mau"/>
+                                    <segue destination="WTx-YJ-79G" kind="modal" id="UMx-dh-IzH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -241,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Cf-X7-eaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="756"/>
+            <point key="canvasLocation" x="179" y="1381"/>
         </scene>
         <!--Irauto View Controller-->
         <scene sceneID="eJ5-BC-Beq">
@@ -255,12 +272,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="600.png" translatesAutoresizingMaskIntoConstraints="NO" id="bCC-Il-jX8">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hosi.png" translatesAutoresizingMaskIntoConstraints="NO" id="aBs-TR-UWn">
+                                <rect key="frame" x="-142" y="-87" width="745" height="512"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ライオン全身.png" translatesAutoresizingMaskIntoConstraints="NO" id="stD-i7-Gi1">
                                 <rect key="frame" x="-46" y="-241" width="328" height="653"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDq-Bu-yNe">
+                                <rect key="frame" x="5" y="61" width="248" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="d5I-wF-oYB" kind="modal" id="wuf-51-CCx"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="スクリーンショット 2014-07-05 23.05.54.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hv2-JJ-EPc">
-                                <rect key="frame" x="220" y="-153" width="260" height="653"/>
+                                <rect key="frame" x="226" y="-158" width="260" height="653"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Xj-cS-xEe">
@@ -286,7 +321,16 @@
                                 </state>
                                 <connections>
                                     <action selector="next" destination="FHG-tO-piy" eventType="touchUpInside" id="Lcx-SU-yCF"/>
-                                    <segue destination="d5I-wF-oYB" kind="modal" id="2J1-FW-7BS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUV-rb-dff">
+                                <rect key="frame" x="261" y="57" width="212" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="d5I-wF-oYB" kind="modal" id="06n-jt-334"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -306,7 +350,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="600.png" width="600" height="600"/>
         <image name="back.png" width="64" height="64"/>
+        <image name="hosi.png" width="1000" height="1000"/>
         <image name="nex1t.png" width="64" height="64"/>
         <image name="sutoraipu.png" width="1000" height="1000"/>
         <image name="test.png" width="300" height="300"/>
@@ -320,8 +366,6 @@
         <image name="スクリーンショット 2014-07-12 20.03.27.png" width="1681" height="1050"/>
         <image name="スクリーンショット 2014-07-13 12.54.09.png" width="662" height="642"/>
         <image name="ライオン全身.png" width="842" height="1169"/>
-        <image name="雪だるま 2" width="662" height="642"/>
-        <image name="雪だるま.png" width="442" height="370"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -329,6 +373,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="2J1-FW-7BS"/>
+        <segue reference="wuf-51-CCx"/>
+        <segue reference="UMx-dh-IzH"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -13,6 +13,8 @@
     IBOutlet UIImageView*irasuto2;
     IBOutlet UIButton *next;
     int kaisuu;
+    int gazou1;
+    int gazou2;
     
     
     

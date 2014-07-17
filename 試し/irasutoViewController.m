@@ -26,9 +26,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    kaisuu = 0;
 
-    
-    
+    irasuto1.image = [UIImage imageNamed:@"ライオン全身.png"];
+    irasuto2.image = [UIImage imageNamed:@"スクリーンショット 2014-07-12 11.07.56.png"];
+
 }
 -(IBAction)next{
     
