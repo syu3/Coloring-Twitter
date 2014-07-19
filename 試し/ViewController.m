@@ -26,6 +26,7 @@
     canvas.frame = self.view.frame;
     [self.view insertSubview:canvas atIndex:0];
     rgb = 0;
+    gazou = [UIImage imageNamed:@"スクリーンショット 2014-07-12 20.03.27.png"];
     
    
     
@@ -152,13 +153,18 @@
 
 
 -(IBAction)tuito{
-    
+
     [self png];
     
     SLComposeViewController *twitter = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-    
+    UIImage*a = gazou;//イラストのことです。
+    UIImage*b = capure;//色のことです。
+    tweet = a,b;//tweetに、イラストと色を入れるコード
+
     [twitter setInitialText:@"こんな絵を描きました。"];
-    [twitter addImage:capure];
+        [twitter addImage:tweet];//ここでtwiterと投稿画面にtweetを表示する。
+
+
     
     [self presentModalViewController:twitter animated:YES];
 }
