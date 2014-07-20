@@ -111,7 +111,7 @@
                                 <rect key="frame" x="-142" y="-87" width="745" height="512"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ライオン全身.png" translatesAutoresizingMaskIntoConstraints="NO" id="stD-i7-Gi1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stD-i7-Gi1">
                                 <rect key="frame" x="-46" y="-241" width="328" height="653"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -125,7 +125,7 @@
                                     <segue destination="d5I-wF-oYB" kind="modal" id="wuf-51-CCx"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="スクリーンショット 2014-07-05 23.05.54.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hv2-JJ-EPc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hv2-JJ-EPc">
                                 <rect key="frame" x="226" y="-158" width="260" height="653"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -140,20 +140,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nex1t.png" translatesAutoresizingMaskIntoConstraints="NO" id="LLC-Pm-DOf">
-                                <rect key="frame" x="430" y="227" width="50" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BN7-JN-cEf">
-                                <rect key="frame" x="430" y="227" width="50" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="next" destination="FHG-tO-piy" eventType="touchUpInside" id="cpO-UL-chS"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUV-rb-dff">
                                 <rect key="frame" x="261" y="57" width="212" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -164,6 +150,20 @@
                                     <segue destination="d5I-wF-oYB" kind="modal" id="06n-jt-334"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BN7-JN-cEf">
+                                <rect key="frame" x="430" y="227" width="50" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="next" destination="FHG-tO-piy" eventType="touchUpInside" id="cpO-UL-chS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nex1t.png" translatesAutoresizingMaskIntoConstraints="NO" id="LLC-Pm-DOf">
+                                <rect key="frame" x="430" y="227" width="50" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -177,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sd5-ho-V0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1021" y="1015"/>
+            <point key="canvasLocation" x="-1014" y="1034"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="k71-Nf-nB6">
@@ -344,9 +344,6 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <outlet property="gazou" destination="sCO-P5-9hF" id="AnQ-UO-hdC"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8n-IS-wtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -366,10 +363,8 @@
         <image name="test5.png" width="300" height="300"/>
         <image name="test6.png" width="300" height="300"/>
         <image name="twitter.jpg" width="598" height="554"/>
-        <image name="スクリーンショット 2014-07-05 23.05.54.png" width="240" height="196"/>
         <image name="スクリーンショット 2014-07-12 20.03.27.png" width="1681" height="1050"/>
         <image name="スクリーンショット 2014-07-13 12.54.09.png" width="662" height="642"/>
-        <image name="ライオン全身.png" width="842" height="1169"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -377,7 +372,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="teF-Io-fZd"/>
+        <segue reference="wuf-51-CCx"/>
         <segue reference="zbL-Fy-BO7"/>
     </inferredMetricsTieBreakers>
 </document>

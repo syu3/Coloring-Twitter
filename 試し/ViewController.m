@@ -155,18 +155,17 @@
 -(IBAction)tuito{
 
     [self png];
-    
+
     SLComposeViewController *twitter = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-    UIImage*a = gazou;//イラストのことです。
-    UIImage*b = capure;//色のことです。
-    tweet = a,b;//tweetに、イラストと色を入れるコード
 
     [twitter setInitialText:@"こんな絵を描きました。"];
-        [twitter addImage:tweet];//ここでtwiterと投稿画面にtweetを表示する。
+        [twitter addImage:gazou];
+    gazou.image = [UIImage imageNamed:capure];
+
 
 
     
-    [self presentModalViewController:twitter animated:YES];
+    [self presentViewController:twitter animated:YES completion:nil];
 }
 
 @end

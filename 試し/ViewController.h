@@ -13,11 +13,8 @@
     UIImageView *canvas;
     CGPoint touchPoint;
     UIImage*capure;
-    UIImage*gazou;
-    UIImage*tweet;
+    UIImageView*gazou;
     int rgb;
-
-
 }
 -(IBAction)red;
 -(IBAction)green;
