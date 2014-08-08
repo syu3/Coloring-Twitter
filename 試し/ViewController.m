@@ -7,11 +7,11 @@
 //
 
 #import "ViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController ()
 
 @end
-
 @implementation ViewController{
     int ope;
     int number;
@@ -21,20 +21,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+ 
+    a = 0;
     canvas = [[UIImageView alloc]initWithImage:nil];
     canvas.backgroundColor = [UIColor whiteColor];
     canvas.frame = self.view.frame;
     [self.view insertSubview:canvas atIndex:0];
     rgb = 0;
-    gazou = [UIImage imageNamed:@"スクリーンショット 2014-07-12 20.03.27.png"];
+    c = 0;
     
-   
     
-//    canvas.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"スクリーンショット 2014-07-05 23.05.54.png"]];
-//    [yellow addTarget:self
-//               action:@selector(segment_ValueChanged:)
-//     forControlEvents:UIControlEventValueChanged];
+
+    
+    
+//
+//
+//
+//
+////    canvas.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"スクリーンショット 2014-07-05 23.05.54.png"]];
+////    [yellow addTarget:self
+////               action:@selector(segment_ValueChanged:)
+////     forControlEvents:UIControlEventValueChanged];
+//}
 }
+
 -(IBAction)dai{
     number = 0;
 }
@@ -52,13 +62,15 @@
 }
 -(IBAction)yellow{
     ope = 3;
-}-(IBAction)black{
+}
+-(IBAction)black{
     ope = 4;
 }
 -(IBAction)white{
     ope = 5;
 }
 //画面に指をタッチしたときの処理
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     //タッチ開始座標を先ほど宣言したtouchPointという変数に入れる
     UITouch *touch = [touches anyObject];
@@ -150,22 +162,116 @@
                                                    message:message delegate:nil cancelButtonTitle:@"確認" otherButtonTitles:nil, nil];
     [alert show];
 }
-
-
--(IBAction)tuito{
-
-    [self png];
-
-    SLComposeViewController *twitter = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
-
-    [twitter setInitialText:@"こんな絵を描きました。"];
-        [twitter addImage:gazou];
-    gazou.image = [UIImage imageNamed:capure];
-
-
-
+-(IBAction)tweet{
+    CGRect rect = CGRectMake(0, 30, 320, 380);
+    UIGraphicsBeginImageContext(rect.size);
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    capure = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
     
-    [self presentViewController:twitter animated:YES completion:nil];
+    UIImageWriteToSavedPhotosAlbum(capure, nil, nil, nil);
+    UIGraphicsEndImageContext();
+    
+    
+    
+    
+    
+    SLComposeViewController *twitter = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+    [twitter setInitialText:@"こんな絵を描きました。"];
+    [twitter addImage:capure];
+    
+    [self presentModalViewController:twitter animated:YES];
 }
+//-(IBAction)tapBtn{
+//
+//    
+//    c = c + 1;
+//    if (c == 1) {
+//        
+//    
+//    myButton.center=CGPointMake(445,306);
+//    [UIView beginAnimations:nil context:nil];
+//    [UIView setAnimationDuration:2];
+//    myButton.center=CGPointMake(485, 306);
+//    [UIView commitAnimations];
+//    NSLog(@"オーイオーイオーイオーイオーイオーイ");
+//    }else if (c ==2 ){
+//        NSLog(@"co2");
+//        myButton.center=CGPointMake(485,306);
+//        [UIView beginAnimations:nil context:nil];
+//        [UIView setAnimationDuration:2];
+//        myButton.center=CGPointMake(500, 306);
+//        [UIView commitAnimations];
+//        NSLog(@"オーイ1オーイ1オーイ1オーイ1オーイオーイ1");
+//    }else{
+//        NSLog(@"co3");
+//        myButton.center=CGPointMake(500,306);
+//        [UIView beginAnimations:nil context:nil];
+//        [UIView setAnimationDuration:2];
+//        myButton.center=CGPointMake(530, 306);
+//        [UIView commitAnimations];
+//        NSLog(@"オーイ2オーイ1オーイ1オーイ1オーイオーイ1");
+//    }
+//}
+-(IBAction)next{
+    NSLog(@"next");
+    a=a+1;
+    NSLog(@"%d",a);
+    if (a== 1) {
+    [UIView animateWithDuration:2 animations:^{
+        CGRect frame = myView.frame;
+        frame.origin.y += -100;
+        //483;
+        myView.frame = frame;
 
+       }];
+    }
+    int b;
+    b=b+1;
+    if (b == 1) {
+
+    }
+}
+//-(IBAction)next1{
+//    NSLog(@"next1");
+//    a=a+1;
+//    NSLog(@"%d",a);
+//    if (a== 1) {
+//        [UIView animateWithDuration:2 animations:^{
+//            CGRect frame = myView.frame;
+//            frame.origin.y += -483;
+//            myView.frame = frame;
+//            
+//        }];
+//    }else if (a == 2){
+//        
+//        [UIView animateWithDuration:5 animations:^{
+//            CGRect frame = myView.frame;
+//            frame.origin.y += -480;
+//            myView.frame = frame;
+//            
+//        }];
+//    }
+//}
+//-(IBAction)next2{
+//    NSLog(@"next2");
+//    a=a+1;
+//    NSLog(@"%d",a);
+//    if (a== 1) {
+//        [UIView animateWithDuration:2 animations:^{
+//            CGRect frame = myView.frame;
+//            frame.origin.y += -483;
+//            myView.frame = frame;
+//            
+//        }];
+//    }else if (a == 2){
+//        
+//        [UIView animateWithDuration:5 animations:^{
+//            CGRect frame = myView.frame;
+//            frame.origin.y += -480;
+//            myView.frame = frame;
+//            
+//        }];
+//    }
+//}
 @end

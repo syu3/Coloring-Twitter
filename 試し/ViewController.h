@@ -10,12 +10,21 @@
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
 @interface ViewController : UIViewController{
+    int a;
+    IBOutlet UIView*myView;
+    IBOutlet UIImageView* imageView;
+    IBOutlet UIButton *myButton;
     UIImageView *canvas;
     CGPoint touchPoint;
     UIImage*capure;
     UIImageView*gazou;
     int rgb;
+        int c;
 }
+
+
+
+-(IBAction)tapBtn;
 -(IBAction)red;
 -(IBAction)green;
 -(IBAction)blue;
@@ -24,4 +33,5 @@
 -(IBAction)white;
 -(IBAction)shou;
 -(IBAction)dai;
+-(IBAction)tweet;
 @end

@@ -9,14 +9,7 @@
 #import "ViewController.h"
 
 @interface irasutoViewController : ViewController{
-    IBOutlet UIImageView*irasuto1;
-    IBOutlet UIImageView*irasuto2;
-    IBOutlet UIButton *next;
-    int kaisuu;
-    int gazou1;
-    int gazou2;
-    
-    
+
     
 }
 -(IBAction)next;
