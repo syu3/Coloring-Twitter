@@ -13,6 +13,7 @@
 		4B2B59791970EB9F0034B762 /* スクリーンショット 2014-07-12 11.07.56.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2B59781970EB9F0034B762 /* スクリーンショット 2014-07-12 11.07.56.png */; };
 		4B2B597B1970EDE60034B762 /* ゾウ22.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2B597A1970EDE60034B762 /* ゾウ22.png */; };
 		4B2B597F19710FD30034B762 /* スクリーンショット 2014-07-12 13.23.08.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2B597E19710FD30034B762 /* スクリーンショット 2014-07-12 13.23.08.png */; };
+		4B30E4E21996580A009C5402 /* 車 笑顔.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B30E4E11996580A009C5402 /* 車 笑顔.png */; };
 		4B554D6F1967CEDF00033579 /* twitter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B554D6E1967CEDF00033579 /* twitter.jpg */; };
 		4B554D711967CEE300033579 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B554D701967CEE300033579 /* back.png */; };
 		4BAF38E719682C1400592597 /* next2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BAF38E619682C1400592597 /* next2.png */; };
@@ -83,6 +84,7 @@
 		4B2B59801971100E0034B762 /* Untitled-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled-1.png"; sourceTree = "<group>"; };
 		4B2B5983197151CD0034B762 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Untitled.png; sourceTree = "<group>"; };
 		4B2B5984197152670034B762 /* test6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test6.png; sourceTree = "<group>"; };
+		4B30E4E11996580A009C5402 /* 車 笑顔.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "車 笑顔.png"; sourceTree = "<group>"; };
 		4B554D6D1967CD2700033579 /* test5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test5.png; sourceTree = "<group>"; };
 		4B554D6E1967CEDF00033579 /* twitter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter.jpg; sourceTree = "<group>"; };
 		4B554D701967CEE300033579 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				4BD76D991934BA17004F3C19 /* ViewController.h */,
 				4BD76D9A1934BA17004F3C19 /* ViewController.m */,
 				4BD76D9C1934BA17004F3C19 /* Images.xcassets */,
+				4B30E4E11996580A009C5402 /* 車 笑顔.png */,
 				4BD76D8B1934BA17004F3C19 /* Supporting Files */,
 			);
 			path = "試し";
@@ -397,6 +400,7 @@
 				4B2B59731970D91F0034B762 /* ライオン　顔.png in Resources */,
 				4BC925611985D01D005767C0 /* スクリーンショット 2014-07-28 9.24.57.png in Resources */,
 				4BD6455C196183E7002E9B2F /* 雪だるま.png in Resources */,
+				4B30E4E21996580A009C5402 /* 車 笑顔.png in Resources */,
 				4BAF38F619683E1300592597 /* スクリーンショット 2014-07-05 23.05.54.png in Resources */,
 				4BCA71F91972106400D52114 /* スクリーンショット 2014-07-12 20.03.27.png in Resources */,
 				4B2B597F19710FD30034B762 /* スクリーンショット 2014-07-12 13.23.08.png in Resources */,
@@ -568,6 +572,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "試し/試し-Prefix.pch";
 				INFOPLIST_FILE = "試し/試し-Info.plist";
@@ -581,6 +586,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "試し/試し-Prefix.pch";
 				INFOPLIST_FILE = "試し/試し-Info.plist";

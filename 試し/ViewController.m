@@ -29,11 +29,6 @@
     [self.view insertSubview:canvas atIndex:0];
     rgb = 0;
     c = 0;
-    
-    
-
-    
-    
 //
 //
 //
