@@ -13,7 +13,6 @@
 		4B2B59791970EB9F0034B762 /* スクリーンショット 2014-07-12 11.07.56.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2B59781970EB9F0034B762 /* スクリーンショット 2014-07-12 11.07.56.png */; };
 		4B2B597B1970EDE60034B762 /* ゾウ22.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2B597A1970EDE60034B762 /* ゾウ22.png */; };
 		4B2B597F19710FD30034B762 /* スクリーンショット 2014-07-12 13.23.08.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2B597E19710FD30034B762 /* スクリーンショット 2014-07-12 13.23.08.png */; };
-		4B30E4E21996580A009C5402 /* 車 笑顔.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B30E4E11996580A009C5402 /* 車 笑顔.png */; };
 		4B554D6F1967CEDF00033579 /* twitter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B554D6E1967CEDF00033579 /* twitter.jpg */; };
 		4B554D711967CEE300033579 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B554D701967CEE300033579 /* back.png */; };
 		4BAF38E719682C1400592597 /* next2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BAF38E619682C1400592597 /* next2.png */; };
@@ -32,6 +31,7 @@
 		4BCA71F91972106400D52114 /* スクリーンショット 2014-07-12 20.03.27.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA71F81972106400D52114 /* スクリーンショット 2014-07-12 20.03.27.png */; };
 		4BCA71FC197239C400D52114 /* スクリーンショット 2014-07-13 12.50.53.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA71FB197239C400D52114 /* スクリーンショット 2014-07-13 12.50.53.png */; };
 		4BCA71FE19723A7B00D52114 /* スクリーンショット 2014-07-13 12.54.09.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCA71FD19723A7B00D52114 /* スクリーンショット 2014-07-13 12.54.09.png */; };
+		4BCCB5D719974A79002DB07D /* スクリーンショット 2014-08-10 15.29.45.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCB5D619974A79002DB07D /* スクリーンショット 2014-08-10 15.29.45.png */; };
 		4BCCFE8719690A6100C1FEF4 /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCFE8519690A6100C1FEF4 /* a.png */; };
 		4BCCFE8819690A6100C1FEF4 /* haikei2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCFE8619690A6100C1FEF4 /* haikei2.png */; };
 		4BCCFE8D19691CD300C1FEF4 /* nex1t.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCFE8C19691CD300C1FEF4 /* nex1t.png */; };
@@ -84,7 +84,6 @@
 		4B2B59801971100E0034B762 /* Untitled-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Untitled-1.png"; sourceTree = "<group>"; };
 		4B2B5983197151CD0034B762 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Untitled.png; sourceTree = "<group>"; };
 		4B2B5984197152670034B762 /* test6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test6.png; sourceTree = "<group>"; };
-		4B30E4E11996580A009C5402 /* 車 笑顔.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "車 笑顔.png"; sourceTree = "<group>"; };
 		4B554D6D1967CD2700033579 /* test5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test5.png; sourceTree = "<group>"; };
 		4B554D6E1967CEDF00033579 /* twitter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter.jpg; sourceTree = "<group>"; };
 		4B554D701967CEE300033579 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
@@ -111,6 +110,7 @@
 		4BCA71FB197239C400D52114 /* スクリーンショット 2014-07-13 12.50.53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2014-07-13 12.50.53.png"; sourceTree = "<group>"; };
 		4BCA71FD19723A7B00D52114 /* スクリーンショット 2014-07-13 12.54.09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2014-07-13 12.54.09.png"; sourceTree = "<group>"; };
 		4BCACF6A1976945A002D6132 /* hosi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hosi.png; sourceTree = "<group>"; };
+		4BCCB5D619974A79002DB07D /* スクリーンショット 2014-08-10 15.29.45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2014-08-10 15.29.45.png"; sourceTree = "<group>"; };
 		4BCCFE8519690A6100C1FEF4 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
 		4BCCFE8619690A6100C1FEF4 /* haikei2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei2.png; sourceTree = "<group>"; };
 		4BCCFE8B19691C7B00C1FEF4 /* haikei4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei4.png; sourceTree = "<group>"; };
@@ -222,7 +222,6 @@
 				4BD76D991934BA17004F3C19 /* ViewController.h */,
 				4BD76D9A1934BA17004F3C19 /* ViewController.m */,
 				4BD76D9C1934BA17004F3C19 /* Images.xcassets */,
-				4B30E4E11996580A009C5402 /* 車 笑顔.png */,
 				4BD76D8B1934BA17004F3C19 /* Supporting Files */,
 			);
 			path = "試し";
@@ -231,6 +230,7 @@
 		4BD76D8B1934BA17004F3C19 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4BCCB5D619974A79002DB07D /* スクリーンショット 2014-08-10 15.29.45.png */,
 				4BC925601985D01D005767C0 /* スクリーンショット 2014-07-28 9.24.57.png */,
 				4BCACF6A1976945A002D6132 /* hosi.png */,
 				4BCA71FD19723A7B00D52114 /* スクリーンショット 2014-07-13 12.54.09.png */,
@@ -400,7 +400,6 @@
 				4B2B59731970D91F0034B762 /* ライオン　顔.png in Resources */,
 				4BC925611985D01D005767C0 /* スクリーンショット 2014-07-28 9.24.57.png in Resources */,
 				4BD6455C196183E7002E9B2F /* 雪だるま.png in Resources */,
-				4B30E4E21996580A009C5402 /* 車 笑顔.png in Resources */,
 				4BAF38F619683E1300592597 /* スクリーンショット 2014-07-05 23.05.54.png in Resources */,
 				4BCA71F91972106400D52114 /* スクリーンショット 2014-07-12 20.03.27.png in Resources */,
 				4B2B597F19710FD30034B762 /* スクリーンショット 2014-07-12 13.23.08.png in Resources */,
@@ -411,6 +410,7 @@
 				4BAF38FB19683FE500592597 /* hai.jpg in Resources */,
 				4BD64556196183E7002E9B2F /* 雪だるま 2.png in Resources */,
 				4BAF38F919683F4500592597 /* green.jpeg in Resources */,
+				4BCCB5D719974A79002DB07D /* スクリーンショット 2014-08-10 15.29.45.png in Resources */,
 				4BAF38E719682C1400592597 /* next2.png in Resources */,
 				4BAF38E919682D4000592597 /* back2.png in Resources */,
 				4BCCFE9919693AD800C1FEF4 /* sutoraipu.png in Resources */,

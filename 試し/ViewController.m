@@ -24,7 +24,7 @@
  
     a = 0;
     canvas = [[UIImageView alloc]initWithImage:nil];
-    canvas.backgroundColor = [UIColor whiteColor];
+    canvas.backgroundColor = [UIColor redColor];
     canvas.frame = self.view.frame;
     [self.view insertSubview:canvas atIndex:0];
     rgb = 0;
@@ -81,14 +81,14 @@
     UIGraphicsBeginImageContext(canvas.frame.size);
     //canvasにセットされている画像(UIImage)を用意
     [canvas.image drawInRect:
-     CGRectMake(0, 0, canvas.frame.size.width, canvas.frame.size.height)];
+     CGRectMake(320, 480, canvas.frame.size.width, canvas.frame.size.height)];
     //線の角を丸くする
     CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
 
 
     switch (number) {
         case 0:
-                CGContextSetLineWidth(UIGraphicsGetCurrentContext(),10.0);
+                CGContextSetLineWidth(UIGraphicsGetCurrentContext(),30.0);
             break;
         case 1:
             CGContextSetLineWidth(UIGraphicsGetCurrentContext(),4.0);
@@ -111,7 +111,7 @@
             CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 0.0, 1.0);
             break;
         case 4:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 0.0, 1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.2, 0.2, 0.2, 1.0);
             break;
         case 5:
             CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 1.0, 1.0);
@@ -156,6 +156,21 @@
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@""
                                                    message:message delegate:nil cancelButtonTitle:@"確認" otherButtonTitles:nil, nil];
     [alert show];
+}
+-(IBAction)next{
+    [ UIView beginAnimations: @"TransitionAnimation" context:nil ];
+
+    // トランジションアニメーションを設定
+    [ UIView setAnimationTransition: UIViewAnimationTransitionCurlUp
+                            forView: imageView
+                              cache:YES ];
+    
+    
+    // imageViewの画像を差し替える
+    imageView.image = [UIImage imageNamed:@"スクリーンショット 2014-07-28 9.24.57.png" ];
+    imageView.animationDuration = 5.0f;
+    // アニメーションを開始
+    [ UIView commitAnimations ];
 }
 -(IBAction)tweet{
     CGRect rect = CGRectMake(0, 30, 320, 380);
@@ -208,25 +223,7 @@
 //        NSLog(@"オーイ2オーイ1オーイ1オーイ1オーイオーイ1");
 //    }
 //}
--(IBAction)next{
-    NSLog(@"next");
-    a=a+1;
-    NSLog(@"%d",a);
-    if (a== 1) {
-    [UIView animateWithDuration:2 animations:^{
-        CGRect frame = myView.frame;
-        frame.origin.y += -100;
-        //483;
-        myView.frame = frame;
 
-       }];
-    }
-    int b;
-    b=b+1;
-    if (b == 1) {
-
-    }
-}
 //-(IBAction)next1{
 //    NSLog(@"next1");
 //    a=a+1;
