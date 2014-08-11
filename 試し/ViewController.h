@@ -13,7 +13,7 @@
     IBOutlet UIView*view1;
     int a;
     IBOutlet UIView*myView;
-    IBOutlet UIImageView* imageView;
+
     IBOutlet UIButton *myButton;
     UIImageView *canvas;
     CGPoint touchPoint;
@@ -21,6 +21,7 @@
     UIImageView*gazou;
     int rgb;
         int c;
+
 }
 
 

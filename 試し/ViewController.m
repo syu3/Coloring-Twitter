@@ -24,7 +24,7 @@
  
     a = 0;
     canvas = [[UIImageView alloc]initWithImage:nil];
-    canvas.backgroundColor = [UIColor redColor];
+    canvas.backgroundColor = [UIColor whiteColor];
     canvas.frame = self.view.frame;
     [self.view insertSubview:canvas atIndex:0];
     rgb = 0;
@@ -81,7 +81,7 @@
     UIGraphicsBeginImageContext(canvas.frame.size);
     //canvasにセットされている画像(UIImage)を用意
     [canvas.image drawInRect:
-     CGRectMake(320, 480, canvas.frame.size.width, canvas.frame.size.height)];
+     CGRectMake(0,0, canvas.frame.size.width, canvas.frame.size.height)];
     //線の角を丸くする
     CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
 
@@ -157,21 +157,7 @@
                                                    message:message delegate:nil cancelButtonTitle:@"確認" otherButtonTitles:nil, nil];
     [alert show];
 }
--(IBAction)next{
-    [ UIView beginAnimations: @"TransitionAnimation" context:nil ];
 
-    // トランジションアニメーションを設定
-    [ UIView setAnimationTransition: UIViewAnimationTransitionCurlUp
-                            forView: imageView
-                              cache:YES ];
-    
-    
-    // imageViewの画像を差し替える
-    imageView.image = [UIImage imageNamed:@"スクリーンショット 2014-07-28 9.24.57.png" ];
-    imageView.animationDuration = 5.0f;
-    // アニメーションを開始
-    [ UIView commitAnimations ];
-}
 -(IBAction)tweet{
     CGRect rect = CGRectMake(0, 30, 320, 380);
     UIGraphicsBeginImageContext(rect.size);
@@ -181,11 +167,6 @@
     
     UIImageWriteToSavedPhotosAlbum(capure, nil, nil, nil);
     UIGraphicsEndImageContext();
-    
-    
-    
-    
-    
     SLComposeViewController *twitter = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
     [twitter setInitialText:@"こんな絵を描きました。"];
     [twitter addImage:capure];
