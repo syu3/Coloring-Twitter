@@ -15,6 +15,7 @@
 		4B2B597F19710FD30034B762 /* スクリーンショット 2014-07-12 13.23.08.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B2B597E19710FD30034B762 /* スクリーンショット 2014-07-12 13.23.08.png */; };
 		4B554D6F1967CEDF00033579 /* twitter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B554D6E1967CEDF00033579 /* twitter.jpg */; };
 		4B554D711967CEE300033579 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B554D701967CEE300033579 /* back.png */; };
+		4B87352E199A03380033323B /* white1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B87352D199A03380033323B /* white1.png */; };
 		4BAF38E719682C1400592597 /* next2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BAF38E619682C1400592597 /* next2.png */; };
 		4BAF38E919682D4000592597 /* back2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BAF38E819682D4000592597 /* back2.png */; };
 		4BAF38EB1968366800592597 /* haikei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BAF38EA1968366800592597 /* haikei.jpg */; };
@@ -94,6 +95,7 @@
 		4B554D6E1967CEDF00033579 /* twitter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter.jpg; sourceTree = "<group>"; };
 		4B554D701967CEE300033579 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		4B554D731967D2EB00033579 /* ライオン　顔１.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ライオン　顔１.png"; sourceTree = "<group>"; };
+		4B87352D199A03380033323B /* white1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white1.png; sourceTree = "<group>"; };
 		4BAF38E619682C1400592597 /* next2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next2.png; sourceTree = "<group>"; };
 		4BAF38E819682D4000592597 /* back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2.png; sourceTree = "<group>"; };
 		4BAF38EA1968366800592597 /* haikei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = haikei.jpg; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 		4BD76D8B1934BA17004F3C19 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4B87352D199A03380033323B /* white1.png */,
 				4BCCB5D619974A79002DB07D /* 車.png */,
 				4BC925601985D01D005767C0 /* スクリーンショット 2014-07-28 9.24.57.png */,
 				4BCACF6A1976945A002D6132 /* hosi.png */,
@@ -457,6 +460,7 @@
 				4BD3F68F19985B4F00244668 /* black.png in Resources */,
 				4BD76D981934BA17004F3C19 /* Main.storyboard in Resources */,
 				4BCCFE8819690A6100C1FEF4 /* haikei2.png in Resources */,
+				4B87352E199A03380033323B /* white1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

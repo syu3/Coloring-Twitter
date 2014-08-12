@@ -23,12 +23,13 @@
     [super viewDidLoad];
  
     a = 0;
-    canvas = [[UIImageView alloc]initWithImage:nil];
-    canvas.backgroundColor = [UIColor whiteColor];
-    canvas.frame = self.view.frame;
     [self.view insertSubview:canvas atIndex:0];
     rgb = 0;
     c = 0;
+    
+    
+    
+  
 //
 //
 //
@@ -127,7 +128,7 @@
     canvas.image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     touchPoint = currentPoint;
-    
+    NSLog(@"%d",canvas.frame.size);
     
 }
 -(void)png{

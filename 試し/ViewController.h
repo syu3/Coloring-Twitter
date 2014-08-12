@@ -14,13 +14,14 @@
     int a;
     IBOutlet UIView*myView;
 
-    IBOutlet UIButton *myButton;
-    UIImageView *canvas;
+    IBOutlet UIImageView *canvas;
     CGPoint touchPoint;
     UIImage*capure;
     UIImageView*gazou;
     int rgb;
         int c;
+    
+    IBOutlet UIView*view;
 
 }
 
