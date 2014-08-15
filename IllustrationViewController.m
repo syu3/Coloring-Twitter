@@ -4,36 +4,59 @@
 //
 //  Created by 加藤 周 on 2014/08/11.
 //  Copyright (c) 2014年 mycompany. All rights reserved.
-//
-
 #import "IllustrationViewController.h"
 
 @interface IllustrationViewController ()
-
 @end
-
 @implementation IllustrationViewController
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+
     }
     return self;
 }
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    
-    button1.alpha = 0.0;
-    next1.alpha = 0.0;
+    button.alpha = 0.0;
+    back.alpha = 0.0;
+}
+-(IBAction)illustrationButton1{
+    hyojo = 0;
+}
+-(IBAction)illustrationButton2{
+    hyojo = 1;
+}
+-(IBAction)illustrationButton3{
+    hyojo = 2;
+}
+-(IBAction)illustrationButton4{
+    hyojo = 3;
+}
+-(IBAction)illustrationButton5{
+    hyojo = 4;
+}
+-(IBAction)illustrationButton6{
+    hyojo = 5;
 }
 -(IBAction)back{
 
+    kaisu1 = kaisu1 - 1;
+    if (kaisu1 == 0) {
+        [UIView animateWithDuration:1 animations:^{
+            button.alpha = 0.0;
+            back.alpha = 0.0;
+        }];
+    }else if (kaisu1 == 1){
+        [UIView animateWithDuration:1 animations:^{
+            [UIView animateWithDuration:1 animations:^{
+                button1.alpha = 1.0;
+                next.alpha = 1.0;
+            }];
+        }];
+    }
     UIViewAnimationOptions animeOptions = UIViewAnimationOptionCurveEaseInOut;
     CGFloat cx = illustration1.center.x;
     CGFloat cy = illustration1.center.y;
@@ -43,9 +66,10 @@
                         options:animeOptions
                      animations:^{
                          illustration1.center = pt;
-                         
                      }
                      completion:nil];
+    
+    
     
     
     
@@ -61,18 +85,8 @@
                         options:animeOptions1
                      animations:^{
                          illustration2.center = pt1;
-                         
                      }
                      completion:nil];
-    
-    
-    
-    
-    
-    
-    
-    
-    
     UIViewAnimationOptions animeOptions2 = UIViewAnimationOptionCurveEaseInOut;
     CGFloat cx2 = illustration3.center.x;
     CGFloat cy2 = illustration3.center.y;
@@ -82,17 +96,8 @@
                         options:animeOptions2
                      animations:^{
                          illustration3.center = pt2;
-                         
                      }
                      completion:nil];
-    
-    
-    
-    
-    
-    
-    
-    
     UIViewAnimationOptions animeOptions3 = UIViewAnimationOptionCurveEaseInOut;
     CGFloat cx3 = illustration4.center.x;
     CGFloat cy3 = illustration4.center.y;
@@ -105,14 +110,7 @@
                          
                      }
                      completion:nil];
-    
-    
-    
-    
-    
-    
-    
-    
+
     UIViewAnimationOptions animeOptions4 = UIViewAnimationOptionCurveEaseInOut;
     CGFloat cx4 = illustration5.center.x;
     CGFloat cy4 = illustration5.center.y;
@@ -147,12 +145,24 @@
 
 }
 -(IBAction)next{
-            [UIView animateWithDuration:1 animations:^{
-    button1.alpha = 1.0;
-    next1.alpha = 1.0;
-                
-     }];
 
+    kaisu1 = kaisu1 +1;
+    if (kaisu1 == 1) {
+        
+        
+        [UIView animateWithDuration:1 animations:^{
+            button.alpha = 1.0;
+            back.alpha = 1.0;
+
+        }];
+
+    }else if (kaisu1 == 2){
+        [UIView animateWithDuration:1 animations:^{
+            button1.alpha = 0.0;
+            next.alpha = 0.0;
+        }];
+
+    }
     
 UIViewAnimationOptions animeOptions = UIViewAnimationOptionCurveEaseInOut;
     CGFloat cx = illustration1.center.x;

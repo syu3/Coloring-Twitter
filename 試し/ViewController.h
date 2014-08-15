@@ -11,8 +11,7 @@
 #import <Social/Social.h>
 @interface ViewController : UIViewController{
     IBOutlet UIView*view1;
-    int a;
-    IBOutlet UIView*myView;
+
 
     IBOutlet UIImageView *canvas;
     CGPoint touchPoint;
@@ -24,10 +23,6 @@
     IBOutlet UIView*view;
 
 }
-
-
-
--(IBAction)tapBtn;
 -(IBAction)red;
 -(IBAction)green;
 -(IBAction)blue;

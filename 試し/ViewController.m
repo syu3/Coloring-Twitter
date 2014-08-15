@@ -21,8 +21,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
- 
-    a = 0;
     [self.view insertSubview:canvas atIndex:0];
     rgb = 0;
     c = 0;
@@ -128,8 +126,6 @@
     canvas.image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     touchPoint = currentPoint;
-    NSLog(@"%d",canvas.frame.size);
-    
 }
 -(void)png{
     CGRect rect = canvas.bounds;
@@ -140,16 +136,6 @@
     NSData *data = UIImagePNGRepresentation(UIGraphicsGetImageFromCurrentImageContext());
     capure = [UIImage imageWithData:data];
     UIGraphicsEndImageContext();
-}
--(IBAction)save{
-    [self png];
-    UIImageWriteToSavedPhotosAlbum(
-                                   capure,
-                                   self,
-                                   @selector(onCompleteCapture:didFinishSavingWithError:contextInfo:),
-                                   NULL);
-    
-    
 }
 -(void)onCompleteCapture:(UIImage *)screenImage didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
     NSString *message = @"保存しました。";
@@ -174,78 +160,4 @@
     
     [self presentModalViewController:twitter animated:YES];
 }
-//-(IBAction)tapBtn{
-//
-//    
-//    c = c + 1;
-//    if (c == 1) {
-//        
-//    
-//    myButton.center=CGPointMake(445,306);
-//    [UIView beginAnimations:nil context:nil];
-//    [UIView setAnimationDuration:2];
-//    myButton.center=CGPointMake(485, 306);
-//    [UIView commitAnimations];
-//    NSLog(@"オーイオーイオーイオーイオーイオーイ");
-//    }else if (c ==2 ){
-//        NSLog(@"co2");
-//        myButton.center=CGPointMake(485,306);
-//        [UIView beginAnimations:nil context:nil];
-//        [UIView setAnimationDuration:2];
-//        myButton.center=CGPointMake(500, 306);
-//        [UIView commitAnimations];
-//        NSLog(@"オーイ1オーイ1オーイ1オーイ1オーイオーイ1");
-//    }else{
-//        NSLog(@"co3");
-//        myButton.center=CGPointMake(500,306);
-//        [UIView beginAnimations:nil context:nil];
-//        [UIView setAnimationDuration:2];
-//        myButton.center=CGPointMake(530, 306);
-//        [UIView commitAnimations];
-//        NSLog(@"オーイ2オーイ1オーイ1オーイ1オーイオーイ1");
-//    }
-//}
-
-//-(IBAction)next1{
-//    NSLog(@"next1");
-//    a=a+1;
-//    NSLog(@"%d",a);
-//    if (a== 1) {
-//        [UIView animateWithDuration:2 animations:^{
-//            CGRect frame = myView.frame;
-//            frame.origin.y += -483;
-//            myView.frame = frame;
-//            
-//        }];
-//    }else if (a == 2){
-//        
-//        [UIView animateWithDuration:5 animations:^{
-//            CGRect frame = myView.frame;
-//            frame.origin.y += -480;
-//            myView.frame = frame;
-//            
-//        }];
-//    }
-//}
-//-(IBAction)next2{
-//    NSLog(@"next2");
-//    a=a+1;
-//    NSLog(@"%d",a);
-//    if (a== 1) {
-//        [UIView animateWithDuration:2 animations:^{
-//            CGRect frame = myView.frame;
-//            frame.origin.y += -483;
-//            myView.frame = frame;
-//            
-//        }];
-//    }else if (a == 2){
-//        
-//        [UIView animateWithDuration:5 animations:^{
-//            CGRect frame = myView.frame;
-//            frame.origin.y += -480;
-//            myView.frame = frame;
-//            
-//        }];
-//    }
-//}
 @end
