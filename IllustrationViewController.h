@@ -23,6 +23,7 @@ int hyojo;
     IBOutlet UIButton*button1;
     IBOutlet UIImageView*back;
 
+
 }
 -(IBAction)illustrationButton1;
 -(IBAction)illustrationButton2;

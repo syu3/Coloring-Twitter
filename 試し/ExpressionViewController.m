@@ -86,14 +86,14 @@
     }
     
     
-    switch (hyojo) {
-        case 0:
-            <#statements#>
-            break;
-            
-        default:
-            break;
-    }
+//    switch (hyojo) {
+//        case 0:
+//            <#statements#>
+//            break;
+//            
+//        default:
+//            break;
+//    }
     
     
 

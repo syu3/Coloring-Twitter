@@ -16,11 +16,11 @@
     IBOutlet UIImageView *canvas;
     CGPoint touchPoint;
     UIImage*capure;
-    UIImageView*gazou;
+
     int rgb;
         int c;
-    
-    IBOutlet UIView*view;
+        UIImageView*tweetImageView;
+    IBOutlet UIImageView *image;
 
 }
 -(IBAction)red;

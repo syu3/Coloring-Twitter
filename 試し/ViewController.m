@@ -146,17 +146,47 @@
 }
 
 -(IBAction)tweet{
-    CGRect rect = CGRectMake(0, 30, 320, 380);
-    UIGraphicsBeginImageContext(rect.size);
-    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
-    capure = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // キャプチャ対象をWindowにします。
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    
+    // キャプチャ画像を描画する対象を生成します。
+    UIGraphicsBeginImageContextWithOptions(window.bounds.size, NO, 0.0f);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    // Windowの現在の表示内容を１つずつ描画して行きます。
+    for (UIWindow *aWindow in [[UIApplication sharedApplication] windows]) {
+        [aWindow.layer renderInContext:context];
+    }
+    
+    // 描画した内容をUIImageとして受け取ります。
+    UIImage *srcImage = UIGraphicsGetImageFromCurrentImageContext();
+
+    CGRect trimArea = CGRectMake(10, 200, 800, 550);
+    
+    // CoreGraphicsの機能を用いて、
+    // 切り抜いた画像を作成する。
+    CGImageRef srcImageRef = [srcImage CGImage];
+    CGImageRef trimmedImageRef = CGImageCreateWithImageInRect(srcImageRef, trimArea);
+    UIImage *trimmedImage = [UIImage imageWithCGImage:trimmedImageRef];
+    
+    // 描画を終了します。
+    
     UIGraphicsEndImageContext();
     
-    UIImageWriteToSavedPhotosAlbum(capure, nil, nil, nil);
+    
+
+//    CGRect rect = CGRectMake(0, 30, 320, 380);
+//    UIGraphicsBeginImageContext(rect.size);
+//    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+//    capure = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    
+    UIImageWriteToSavedPhotosAlbum(trimmedImage, nil, nil, nil);
     UIGraphicsEndImageContext();
     SLComposeViewController *twitter = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
     [twitter setInitialText:@"こんな絵を描きました。"];
-    [twitter addImage:capure];
+    [twitter addImage:trimmedImage];
     
     [self presentModalViewController:twitter animated:YES];
 }
