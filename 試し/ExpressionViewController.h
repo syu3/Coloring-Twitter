@@ -5,7 +5,7 @@
 //  Created by 加藤 周 on 2014/08/11.
 //  Copyright (c) 2014年 mycompany. All rights reserved.
 //
-
+int hyojo1;
 #import "ViewController.h"
 
 
@@ -24,9 +24,23 @@
     IBOutlet UIImageView* Expression5;
     IBOutlet UIImageView* Expression6;
     IBOutlet UIImageView* Expression7;
+    IBOutlet UIButton* ExpressionButton1;
+    IBOutlet UIButton* ExpressionButton2;
+    IBOutlet UIButton* ExpressionButton3;
+    IBOutlet UIButton* ExpressionButton4;
+    IBOutlet UIButton* ExpressionButton5;
+    IBOutlet UIButton* ExpressionButton6;
+    IBOutlet UIButton* ExpressionButton7;
     
     
     
 }
+-(IBAction)ExpressionButton1;
+-(IBAction)ExpressionButton2;
+-(IBAction)ExpressionButton3;
+-(IBAction)ExpressionButton4;
+-(IBAction)ExpressionButton5;
+-(IBAction)ExpressionButton6;
+-(IBAction)ExpressionButton7;
 
 @end

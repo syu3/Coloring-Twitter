@@ -30,10 +30,56 @@
     [super viewDidLoad];
     Expressionbutton.alpha = 0.0;
     Expressionback.alpha = 0.0;
+    NSLog(@"%d",hyojo);
     
-    
+    if (hyojo == 1) {
+        Expression1.image = [UIImage imageNamed:@"ライオン　１笑顔.png"];
+        Expression2.image = [UIImage imageNamed:@"ライオン　2笑顔.png"];
+        Expression3.image = [UIImage imageNamed:@"ライオン　3ムスッと.png"];
+        Expression4.image = [UIImage imageNamed:@"ライオン　4怒.png"];
+        Expression5.image = [UIImage imageNamed:@"ライオン　5ニコニコ.png"];
+        Expression6.image = [UIImage imageNamed:@"ライオン　6泣.png"];
+        
+
+    }else if (hyojo == 2){
+        Expression1.image = [UIImage imageNamed:@"ゾウ　１笑顔.png"];
+        Expression2.image = [UIImage imageNamed:@"ゾウ　2笑顔.png"];
+        Expression3.image = [UIImage imageNamed:@"ゾウ　3ムスッと.png"];
+        Expression4.image = [UIImage imageNamed:@"ゾウ　4怒.png"];
+        Expression5.image = [UIImage imageNamed:@"ゾウ　5ニコニコ.png"];
+        Expression6.image = [UIImage imageNamed:@"ゾウ　６泣.png"];
+        Expression7.image = [UIImage imageNamed:@"ゾウ　7泣.png"];
+
+    }else if (hyojo == 3){
+        Expression1.image = [UIImage imageNamed:@"ひまわり　１笑顔.png"];
+        Expression2.image = [UIImage imageNamed:@"ひまわり　2笑顔.png"];
+        Expression3.image = [UIImage imageNamed:@"ひまわり　3ムスッと.png"];
+        Expression4.image = [UIImage imageNamed:@"ひまわり　4ニコニコ.png"];
+        Expression5.image = [UIImage imageNamed:@"ひまわり　5怒.png"];
+        Expression6.image = [UIImage imageNamed:@"ひまわり　6焦.png"];
+        Expression7.image = [UIImage imageNamed:@"ひまわり　7泣.png"];
+
+    }else if (hyojo == 4){
+        Expression1.image = [UIImage imageNamed:@"雪だるま全身　１笑顔.png"];
+        Expression2.image = [UIImage imageNamed:@"雪だるま全身　2笑顔.png"];
+        Expression3.image = [UIImage imageNamed:@"雪だるま全身　3ムスッと.png"];
+        Expression4.image = [UIImage imageNamed:@"雪だるま全身　4.png"];
+        Expression5.image = [UIImage imageNamed:@"雪だるま全身　5怒.png"];
+        Expression6.image = [UIImage imageNamed:@"雪だるま全身　6焦.png"];
+        Expression7.image = [UIImage imageNamed:@"雪だるま全身　７泣.png"];
+
+    }else if (hyojo == 5){
+        Expression1.image = [UIImage imageNamed:@"飛行機　１笑顔.png"];
+        Expression2.image = [UIImage imageNamed:@"飛行機　2笑顔.png"];
+        Expression3.image = [UIImage imageNamed:@"飛行機　3ムスッと.png"];
+        Expression4.image = [UIImage imageNamed:@"飛行機　4ニコニコ.png"];
+        Expression5.image = [UIImage imageNamed:@"飛行機　5怒.png"];
+        Expression6.image = [UIImage imageNamed:@"飛行機　6泣.png"];
+        Expression7.image = [UIImage imageNamed:@"飛行機　7焦.png"];
+
+    }
     switch (hyojo) {
-        case 0:
+        case 1:
             Expression1.image = [UIImage imageNamed:@"ライオン　１笑顔.png"];
             Expression2.image = [UIImage imageNamed:@"ライオン　2笑顔.png"];
             Expression3.image = [UIImage imageNamed:@"ライオン　3ムスッと.png"];
@@ -42,7 +88,7 @@
             Expression6.image = [UIImage imageNamed:@"ライオン　6泣.png"];
 
             break;
-        case 1:
+        case 2:
             Expression1.image = [UIImage imageNamed:@"ゾウ　１笑顔.png"];
             Expression2.image = [UIImage imageNamed:@"ゾウ　2笑顔.png"];
             Expression3.image = [UIImage imageNamed:@"ゾウ　3ムスッと.png"];
@@ -51,7 +97,7 @@
             Expression6.image = [UIImage imageNamed:@"ゾウ　６泣.png"];
             Expression7.image = [UIImage imageNamed:@"ゾウ　7泣.png"];
             break;
-        case 2:
+        case 3:
             Expression1.image = [UIImage imageNamed:@"ひまわり　１笑顔.png"];
             Expression2.image = [UIImage imageNamed:@"ひまわり　2笑顔.png"];
             Expression3.image = [UIImage imageNamed:@"ひまわり　3ムスッと.png"];
@@ -60,7 +106,7 @@
             Expression6.image = [UIImage imageNamed:@"ひまわり　6焦.png"];
             Expression7.image = [UIImage imageNamed:@"ひまわり　7泣.png"];
             break;
-        case 3:
+        case 4:
             Expression1.image = [UIImage imageNamed:@"雪だるま全身　１笑顔.png"];
             Expression2.image = [UIImage imageNamed:@"雪だるま全身　2笑顔.png"];
             Expression3.image = [UIImage imageNamed:@"雪だるま全身　3ムスッと.png"];
@@ -69,7 +115,7 @@
             Expression6.image = [UIImage imageNamed:@"雪だるま全身　6焦.png"];
             Expression7.image = [UIImage imageNamed:@"雪だるま全身　７泣.png"];
             break;
-        case 4:
+        case 5:
             Expression1.image = [UIImage imageNamed:@"飛行機　１笑顔.png"];
             Expression2.image = [UIImage imageNamed:@"飛行機　2笑顔.png"];
             Expression3.image = [UIImage imageNamed:@"飛行機　3ムスッと.png"];
@@ -78,7 +124,7 @@
             Expression6.image = [UIImage imageNamed:@"飛行機　6泣.png"];
             Expression7.image = [UIImage imageNamed:@"飛行機　7焦.png"];
             break;
-        case 5:
+        case 6:
             Expression1.image = [UIImage imageNamed:@"車　１笑顔.png"];
             Expression2.image = [UIImage imageNamed:@"車　2笑顔.png"];
             Expression3.image = [UIImage imageNamed:@"車　3ムスッと.png"];
@@ -346,9 +392,7 @@
                          
                      }
                      completion:nil];
-    if (hyojo == 1&&hyojo == 2&&hyojo == 3&&hyojo == 4&&hyojo == 5) {
 
-    
     UIViewAnimationOptions animeOptions6 = UIViewAnimationOptionCurveEaseInOut;
     CGFloat cx6 = Expression7.center.x;
     CGFloat cy6 = Expression7.center.y;
@@ -362,8 +406,29 @@
                          
                      }
                      completion:nil];
-    }
+    
     
     
 }
+//-(IBAction)ExpressionButton1{
+//    hyojo1 = 1;
+//}
+//-(IBAction)ExpressionButton2{
+//    hyojo1 = 2;
+//}
+//-(IBAction)ExpressionButton3{
+//    hyojo1 = 3;
+//}
+//-(IBAction)ExpressionButton4{
+//    hyojo1 = 4;
+//}
+//-(IBAction)ExpressionButton5{
+//    hyojo1 = 5;
+//}
+//-(IBAction)ExpressionButton6{
+//    hyojo1 = 6;
+//}
+//-(IBAction)ExpressionButton7{
+//    hyojo1 = 7;
+//}
 @end

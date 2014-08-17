@@ -30,6 +30,7 @@
     illustrationButton4.alpha = 0.0;
     illustrationButton5.alpha = 0.0;
     illustrationButton6.alpha = 0.0;
+    hyojo = 0;
 }
 -(IBAction)illustrationButton1{
     hyojo = 1;
@@ -45,15 +46,15 @@
 
 }
 -(IBAction)illustrationButton4{
-    hyojo = 3;
-
-}
--(IBAction)illustrationButton5{
     hyojo = 4;
 
 }
--(IBAction)illustrationButton6{
+-(IBAction)illustrationButton5{
     hyojo = 5;
+
+}
+-(IBAction)illustrationButton6{
+    hyojo = 6;
 
 }
 -(IBAction)back{

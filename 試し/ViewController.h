@@ -20,6 +20,7 @@
     int rgb;
         int c;
         UIImageView*tweetImageView;
+    IBOutlet UIImageView*imageview;
 
 
 }
