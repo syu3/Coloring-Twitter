@@ -433,5 +433,14 @@
 //}
 
 
-
+-(IBAction)ExpressionButton1{
+    if (hyojo1 == 1) {
+        Expression1.image = [UIImage imageNamed:@"ライオン　１笑顔.png"];
+        Expression2.image = [UIImage imageNamed:@"ライオン　2笑顔.png"];
+        Expression3.image = [UIImage imageNamed:@"ライオン　3ムスッと.png"];
+        Expression4.image = [UIImage imageNamed:@"ライオン　4怒.png"];
+        Expression5.image = [UIImage imageNamed:@"ライオン　5ニコニコ.png"];
+        Expression6.image = [UIImage imageNamed:@"ライオン　6泣.png"];
+    }
+}
 @end
