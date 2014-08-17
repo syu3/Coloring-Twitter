@@ -24,13 +24,16 @@
     [super viewDidLoad];
     button.alpha = 0.0;
     back.alpha = 0.0;
-    illustrationButton1.alpha = 1.0;
-    illustrationButton2.alpha = 1.0;
-    illustrationButton3.alpha = 0.0;
-    illustrationButton4.alpha = 0.0;
-    illustrationButton5.alpha = 0.0;
-    illustrationButton6.alpha = 0.0;
-    hyojo = 0;
+
+
+    if (kaisu1 == 0) {
+        illustrationButton1.alpha = 1.0;
+        illustrationButton2.alpha = 1.0;
+        illustrationButton3.alpha = 0.0;
+        illustrationButton4.alpha = 0.0;
+        illustrationButton5.alpha = 0.0;
+        illustrationButton6.alpha = 0.0;
+    }
 }
 -(IBAction)illustrationButton1{
     hyojo = 1;

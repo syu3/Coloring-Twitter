@@ -286,27 +286,27 @@
                                 <rect key="frame" x="416" y="0.0" width="44" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ライオン　１笑顔.png" translatesAutoresizingMaskIntoConstraints="NO" id="8TW-yA-uBL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ライオン　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="8TW-yA-uBL">
                                 <rect key="frame" x="-8" y="81" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ゾウ　１笑顔.png" translatesAutoresizingMaskIntoConstraints="NO" id="23A-id-1Qi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ゾウ　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="23A-id-1Qi">
                                 <rect key="frame" x="240" y="80" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ひまわり　１笑顔.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tsd-OX-5cf">
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ひまわり　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tsd-OX-5cf">
                                 <rect key="frame" x="480" y="81" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="飛行機　１笑顔.png" translatesAutoresizingMaskIntoConstraints="NO" id="hVo-8Y-OlT">
+                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="飛行機　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="hVo-8Y-OlT">
                                 <rect key="frame" x="960" y="80" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="車　１笑顔.png" translatesAutoresizingMaskIntoConstraints="NO" id="ENC-TD-9rg">
+                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="車　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="ENC-TD-9rg">
                                 <rect key="frame" x="1200" y="81" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="雪だるま全身　１笑顔.png" translatesAutoresizingMaskIntoConstraints="NO" id="yHo-MP-ezC">
+                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="雪だるま全身　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="yHo-MP-ezC">
                                 <rect key="frame" x="720" y="72" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -461,12 +461,13 @@
         <image name="white.png" width="448" height="301"/>
         <image name="white2.png" width="1218" height="1218"/>
         <image name="yellow.png" width="448" height="301"/>
-        <image name="ひまわり　１笑顔.png" width="442" height="582"/>
-        <image name="ゾウ　１笑顔.png" width="440" height="385"/>
+        <image name="ひまわり　１笑顔イラスト.png" width="441" height="581"/>
+        <image name="ゾウ　１笑顔イラスト.png" width="442" height="384"/>
         <image name="ライオン　１笑顔.png" width="470" height="554"/>
-        <image name="車　１笑顔.png" width="427" height="371"/>
-        <image name="雪だるま全身　１笑顔.png" width="456" height="738"/>
-        <image name="飛行機　１笑顔.png" width="468" height="327"/>
+        <image name="ライオン　１笑顔イラスト.png" width="468" height="554"/>
+        <image name="車　１笑顔イラスト.png" width="426" height="369"/>
+        <image name="雪だるま全身　１笑顔イラスト.png" width="456" height="738"/>
+        <image name="飛行機　１笑顔イラスト.png" width="469" height="326"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -474,6 +475,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="cYs-3d-Bss"/>
+        <segue reference="xhr-16-IIf"/>
     </inferredMetricsTieBreakers>
 </document>
