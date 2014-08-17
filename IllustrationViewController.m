@@ -5,6 +5,8 @@
 //  Created by 加藤 周 on 2014/08/11.
 //  Copyright (c) 2014年 mycompany. All rights reserved.
 #import "IllustrationViewController.h"
+#import "ExpressionViewController.h"
+
 
 @interface IllustrationViewController ()
 @end
@@ -22,40 +24,75 @@
     [super viewDidLoad];
     button.alpha = 0.0;
     back.alpha = 0.0;
+    illustrationButton1.alpha = 1.0;
+    illustrationButton2.alpha = 1.0;
+    illustrationButton3.alpha = 0.0;
+    illustrationButton4.alpha = 0.0;
+    illustrationButton5.alpha = 0.0;
+    illustrationButton6.alpha = 0.0;
 }
 -(IBAction)illustrationButton1{
-    hyojo = 0;
+    hyojo = 1;
+    
+
 }
 -(IBAction)illustrationButton2{
-    hyojo = 1;
+    hyojo = 2;
+
 }
 -(IBAction)illustrationButton3{
-    hyojo = 2;
+    hyojo = 3;
+
 }
 -(IBAction)illustrationButton4{
     hyojo = 3;
+
 }
 -(IBAction)illustrationButton5{
     hyojo = 4;
+
 }
 -(IBAction)illustrationButton6{
     hyojo = 5;
+
 }
 -(IBAction)back{
 
     kaisu1 = kaisu1 - 1;
     if (kaisu1 == 0) {
+        illustrationButton1.alpha = 1.0;
+        illustrationButton2.alpha = 1.0;
+        illustrationButton3.alpha = 0.0;
+        illustrationButton4.alpha = 0.0;
+        illustrationButton5.alpha = 0.0;
+        illustrationButton6.alpha = 0.0;
+        
+        
         [UIView animateWithDuration:1 animations:^{
             button.alpha = 0.0;
             back.alpha = 0.0;
+            
+            
+            
+
+            
+            
+            
+            
         }];
     }else if (kaisu1 == 1){
-        [UIView animateWithDuration:1 animations:^{
+
+        illustrationButton1.alpha = 0.0;
+        illustrationButton2.alpha = 0.0;
+        illustrationButton3.alpha = 1.0;
+        illustrationButton4.alpha = 1.0;
+        illustrationButton5.alpha = 0.0;
+        illustrationButton6.alpha = 0.0;
+
             [UIView animateWithDuration:1 animations:^{
                 button1.alpha = 1.0;
                 next.alpha = 1.0;
             }];
-        }];
     }
     UIViewAnimationOptions animeOptions = UIViewAnimationOptionCurveEaseInOut;
     CGFloat cx = illustration1.center.x;
@@ -148,7 +185,12 @@
 
     kaisu1 = kaisu1 +1;
     if (kaisu1 == 1) {
-        
+        illustrationButton1.alpha = 0.0;
+        illustrationButton2.alpha = 0.0;
+        illustrationButton3.alpha = 1.0;
+        illustrationButton4.alpha = 1.0;
+        illustrationButton5.alpha = 0.0;
+        illustrationButton6.alpha = 0.0;
         
         [UIView animateWithDuration:1 animations:^{
             button.alpha = 1.0;
@@ -157,6 +199,12 @@
         }];
 
     }else if (kaisu1 == 2){
+        illustrationButton1.alpha = 0.0;
+        illustrationButton2.alpha = 0.0;
+        illustrationButton3.alpha = 0.0;
+        illustrationButton4.alpha = 0.0;
+        illustrationButton5.alpha = 1.0;
+        illustrationButton6.alpha = 1.0;
         [UIView animateWithDuration:1 animations:^{
             button1.alpha = 0.0;
             next.alpha = 0.0;

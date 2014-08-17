@@ -10,6 +10,13 @@
 
 
 @interface ExpressionViewController : ViewController{
+
+    int kaisu1;
+    IBOutlet UIButton*Expressionbutton;
+    IBOutlet UIImageView*Expressionnext;
+    IBOutlet UIButton*Expressionbutton1;
+    IBOutlet UIImageView*Expressionback;
+        
     IBOutlet UIImageView* Expression1;
     IBOutlet UIImageView* Expression2;
     IBOutlet UIImageView* Expression3;
@@ -17,13 +24,6 @@
     IBOutlet UIImageView* Expression5;
     IBOutlet UIImageView* Expression6;
     IBOutlet UIImageView* Expression7;
-    int kaisu1;
-    IBOutlet UIButton*Expressionbutton;
-    IBOutlet UIImageView*Expressionnext;
-    IBOutlet UIButton*Expressionbutton1;
-    IBOutlet UIImageView*Expressionback;
-        
-        
     
     
     

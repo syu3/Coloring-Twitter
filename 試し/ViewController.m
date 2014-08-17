@@ -173,6 +173,22 @@
     // 描画を終了します。
     
     UIGraphicsEndImageContext();
+    // 元の画像。ここではtest.pngという画像があるとします。
+    trimmedImage = trimmedImage;
+        CGContextRef context1 = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(context1, trimmedImage.size.width/2, trimmedImage.size.height/2); // 回転の中心点を移動
+    CGContextScaleCTM(context1, 1.0, -1.0); // Y軸方向を補正
+    
+    float radian = 45 * M_PI / 180; // 45°回転させたい場合
+    CGContextRotateCTM(context1, radian);
+    CGContextDrawImage(UIGraphicsGetCurrentContext(), CGRectMake(-trimmedImage.size.width/2, -trimmedImage.size.height/2, trimmedImage.size.width, trimmedImage.size.height), trimmedImage                                                                                                                                               .CGImage);
+    
+    UIImage *rotatedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    // UIImageViewに回転後の画像を設定
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.image = rotatedImage;
     
     
 
