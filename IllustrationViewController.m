@@ -37,27 +37,45 @@
 }
 -(IBAction)illustrationButton1{
     hyojo = 1;
+    illustration1.image = [UIImage imageNamed:@"ライオン　１笑顔イラスト.png"];
+    illustration2.image = [UIImage imageNamed:@"ゾウ　１笑顔イラスト.png"];
     
 
 }
 -(IBAction)illustrationButton2{
     hyojo = 2;
+    illustration1.image = [UIImage imageNamed:@"ライオン　１笑顔イラスト.png"];
+    illustration2.image = [UIImage imageNamed:@"ゾウ　１笑顔イラスト.png"];
+
 
 }
 -(IBAction)illustrationButton3{
     hyojo = 3;
+    illustration1.image = [UIImage imageNamed:@"ひまわり　１笑顔イラスト.png"];
+    illustration2.image = [UIImage imageNamed:@"雪だるま全身　１笑顔イラスト.png"];
+
 
 }
 -(IBAction)illustrationButton4{
     hyojo = 4;
+    illustration1.image = [UIImage imageNamed:@"ひまわり　１笑顔イラスト.png"];
+    illustration2.image = [UIImage imageNamed:@"雪だるま全身　１笑顔イラスト.png"];
+    
+
 
 }
 -(IBAction)illustrationButton5{
     hyojo = 5;
+    illustration1.image = [UIImage imageNamed:@"飛行機　１笑顔イラスト.png"];
+    illustration2.image = [UIImage imageNamed:@"車　１笑顔イラスト.png"];
+    
+
 
 }
 -(IBAction)illustrationButton6{
     hyojo = 6;
+    illustration1.image = [UIImage imageNamed:@"飛行機　１笑顔イラスト.png"];
+    illustration2.image = [UIImage imageNamed:@"車　１笑顔イラスト.png"];
 
 }
 -(IBAction)back{
@@ -70,6 +88,7 @@
         illustrationButton4.alpha = 0.0;
         illustrationButton5.alpha = 0.0;
         illustrationButton6.alpha = 0.0;
+
         
         
         [UIView animateWithDuration:1 animations:^{

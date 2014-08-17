@@ -196,6 +196,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IE8-14-Xfn">
+                                <rect key="frame" x="960" y="-1" width="480" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.18794196660000001" green="0.98576920199999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="600.png" translatesAutoresizingMaskIntoConstraints="NO" id="pkz-Ta-g8p">
+                                <rect key="frame" x="480" y="-1" width="480" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59y-nd-Nhe">
                                 <rect key="frame" x="256" y="80" width="224" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -295,19 +304,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ひまわり　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tsd-OX-5cf">
-                                <rect key="frame" x="480" y="81" width="240" height="240"/>
+                                <rect key="frame" x="472" y="81" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="飛行機　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="hVo-8Y-OlT">
-                                <rect key="frame" x="960" y="80" width="240" height="240"/>
+                                <rect key="frame" x="952" y="81" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="車　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="ENC-TD-9rg">
-                                <rect key="frame" x="1200" y="81" width="240" height="240"/>
+                                <rect key="frame" x="1200" y="80" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="雪だるま全身　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="yHo-MP-ezC">
-                                <rect key="frame" x="720" y="72" width="240" height="240"/>
+                                <rect key="frame" x="720" y="80" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
