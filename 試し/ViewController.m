@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "ExpressionViewController.h"
+#import "IllustrationViewController.h"
 
 @interface ViewController ()
 
@@ -22,13 +23,99 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"hyojo%d",hyojo);
+    NSLog(@"hyojo1,%d",hyojo1);
     [self.view insertSubview:canvas atIndex:0];
     rgb = 0;
     c = 0;
+
     
-    
-  
-//
+    if (hyojo == 1 && hyojo1 == 1) {
+        imageview.image = [UIImage imageNamed:@"ライオン　１笑顔.png"];
+    }else if (hyojo == 1 && hyojo1 == 2) {
+
+        imageview.image = [UIImage imageNamed:@"ライオン　2笑顔.png"];
+    }else if (hyojo == 1 && hyojo1 == 3) {
+        imageview.image = [UIImage imageNamed:@"ライオン　3ムスッと.png"];
+    }else if (hyojo == 1 && hyojo1 == 4) {
+        imageview.image = [UIImage imageNamed:@"ライオン　4怒.png"];
+    }else if (hyojo == 1 && hyojo1 == 5) {
+        imageview.image = [UIImage imageNamed:@"ライオン　5ニコニコ.png"];
+    }else if (hyojo == 1 && hyojo1 == 6) {
+        imageview.image = [UIImage imageNamed:@"ライオン　6泣.png"];
+    }else if (hyojo == 2 && hyojo1 == 1) {
+        imageview.image = [UIImage imageNamed:@"ゾウ　１笑顔.png"];
+    }else if (hyojo == 2 && hyojo1 == 2) {
+        imageview.image = [UIImage imageNamed:@"ゾウ　2笑顔.png"];
+    }else if (hyojo == 2 && hyojo1 == 3) {
+        imageview.image = [UIImage imageNamed:@"ゾウ　3ムスッと.png"];
+    }else if (hyojo == 2 && hyojo1 == 4) {
+        imageview.image = [UIImage imageNamed:@"ゾウ　4怒.png"];
+    }else if (hyojo == 2 && hyojo1 == 5) {
+        imageview.image = [UIImage imageNamed:@"ゾウ　5ニコニコ.png"];
+    }else if (hyojo == 2 && hyojo1 == 6) {
+        imageview.image = [UIImage imageNamed:@"ゾウ　６泣.png"];
+    }else if (hyojo == 2 && hyojo1 == 7) {
+        imageview.image = [UIImage imageNamed:@"ゾウ　7泣.png"];
+    }else if (hyojo == 3 && hyojo1 == 1) {
+        imageview.image = [UIImage imageNamed:@"ひまわり　１笑顔.png"];
+    }else if (hyojo == 3 && hyojo1 == 2) {
+        imageview.image = [UIImage imageNamed:@"ひまわり　2笑顔.png"];
+    }else if (hyojo == 3 && hyojo1 == 3) {
+        imageview.image = [UIImage imageNamed:@"ひまわり　3ムスッと.png"];
+    }else if (hyojo == 3 && hyojo1 == 4) {
+        imageview.image = [UIImage imageNamed:@"ひまわり　4ニコニコ.png"];
+    }else if (hyojo == 3 && hyojo1 == 5) {
+        imageview.image = [UIImage imageNamed:@"ひまわり　5怒.png"];
+    }else if (hyojo == 3 && hyojo1 == 6) {
+        imageview.image = [UIImage imageNamed:@"ひまわり　6焦.png"];
+    }else if (hyojo == 3 && hyojo1 == 7) {
+        imageview.image = [UIImage imageNamed:@"ひまわり　7泣.png"];
+    }else if (hyojo == 4 && hyojo1 == 1) {
+        imageview.image = [UIImage imageNamed:@"雪だるま全身　１笑顔.png"];
+    }else if (hyojo == 4 && hyojo1 == 2) {
+        imageview.image = [UIImage imageNamed:@"雪だるま全身　2笑顔.png"];
+    }else if (hyojo == 4 && hyojo1 == 3) {
+        imageview.image = [UIImage imageNamed:@"雪だるま全身　3ムスッと.png"];
+    }else if (hyojo == 4 && hyojo1 == 4) {
+        imageview.image = [UIImage imageNamed:@"雪だるま全身　4.png"];
+    }else if (hyojo == 4 && hyojo1 == 5) {
+        imageview.image = [UIImage imageNamed:@"雪だるま全身　5怒.png"];
+    }else if (hyojo == 4 && hyojo1 == 6) {
+        imageview.image = [UIImage imageNamed:@"雪だるま全身　6焦.png"];
+    }else if (hyojo == 4 && hyojo1 == 7) {
+        imageview.image = [UIImage imageNamed:@"雪だるま全身　７泣.png"];
+    }else if (hyojo == 5 && hyojo1 == 1) {
+        imageview.image = [UIImage imageNamed:@"飛行機　１笑顔.png"];
+    }else if (hyojo == 5 && hyojo1 == 2) {
+        imageview.image = [UIImage imageNamed:@"飛行機　2笑顔.png"];
+    }else if (hyojo == 5 && hyojo1 == 3) {
+        imageview.image = [UIImage imageNamed:@"飛行機　3ムスッと.png"];
+    }else if (hyojo == 5 && hyojo1 == 4) {
+        imageview.image = [UIImage imageNamed:@"飛行機　4ニコニコ.png"];
+    }else if (hyojo == 5 && hyojo1 == 5) {
+        imageview.image = [UIImage imageNamed:@"飛行機　5怒.png"];
+    }else if (hyojo == 5 && hyojo1 == 6) {
+        imageview.image = [UIImage imageNamed:@"飛行機　6泣.png"];
+    }else if (hyojo == 5 && hyojo1 == 7) {
+        imageview.image = [UIImage imageNamed:@"飛行機　7焦.png"];
+    }else if (hyojo == 6 && hyojo1 == 1) {
+        imageview.image = [UIImage imageNamed:@"車　１笑顔.png"];
+    }else if (hyojo == 6 && hyojo1 == 2) {
+        imageview.image = [UIImage imageNamed:@"車　2笑顔.png"];
+    }else if (hyojo == 6 && hyojo1 == 3) {
+        imageview.image = [UIImage imageNamed:@"車　3ムスッと.png"];
+    }else if (hyojo == 6 && hyojo1 == 4) {
+        imageview.image = [UIImage imageNamed:@"車　4.png"];
+    }else if (hyojo == 6 && hyojo1 == 5) {
+        imageview.image = [UIImage imageNamed:@"車　5怒.png"];
+    }else if (hyojo == 6 && hyojo1 == 6) {
+        imageview.image = [UIImage imageNamed:@"車　6焦.png"];
+    }else if (hyojo == 6 && hyojo1 == 7) {
+        imageview.image = [UIImage imageNamed:@"車　7泣.png"];
+
+    }
+    //
 //
 //
 //

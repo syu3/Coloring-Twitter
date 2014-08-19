@@ -10,7 +10,7 @@
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
 @interface ViewController : UIViewController{
-    IBOutlet UIView*view1;
+
 
 
     IBOutlet UIImageView *canvas;

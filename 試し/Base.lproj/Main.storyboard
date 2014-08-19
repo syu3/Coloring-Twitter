@@ -32,10 +32,6 @@
                                 <rect key="frame" x="1" y="1" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ライオン　１笑顔.png" translatesAutoresizingMaskIntoConstraints="NO" id="196-ds-XaA">
-                                <rect key="frame" x="106" y="7" width="270" height="318"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3K-8q-GdH">
                                 <rect key="frame" x="406" y="18" width="49" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -169,6 +165,10 @@
                                     <action selector="dai" destination="t6Y-a0-jhi" eventType="touchUpInside" id="dbG-78-ITn"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="196-ds-XaA">
+                                <rect key="frame" x="106" y="7" width="270" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -178,6 +178,7 @@
                     <size key="freeformSize" width="480" height="320"/>
                     <connections>
                         <outlet property="canvas" destination="ANK-KD-mPC" id="mpp-eN-Ai4"/>
+                        <outlet property="imageview" destination="196-ds-XaA" id="pS2-cz-vG8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQB-w4-cS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -232,6 +233,15 @@
                                     <segue destination="qm6-yv-3EV" kind="modal" id="BOc-40-5Jd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hem-Ok-lHW">
+                                <rect key="frame" x="0.0" y="81" width="224" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12202825389999999" green="1" blue="0.0017448073" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="illustrationButton5" destination="9yS-ph-cRh" eventType="touchUpInside" id="lPI-Hu-0zU"/>
+                                    <segue destination="qm6-yv-3EV" kind="modal" id="3iJ-Et-vlG"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oE-l2-4lG">
                                 <rect key="frame" x="256" y="80" width="224" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -248,15 +258,6 @@
                                 <connections>
                                     <action selector="illustrationButton3" destination="9yS-ph-cRh" eventType="touchUpInside" id="w4B-qT-NqV"/>
                                     <segue destination="qm6-yv-3EV" kind="modal" id="xhr-16-IIf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hem-Ok-lHW">
-                                <rect key="frame" x="0.0" y="81" width="224" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.12202825389999999" green="1" blue="0.0017448073" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="illustrationButton5" destination="9yS-ph-cRh" eventType="touchUpInside" id="lPI-Hu-0zU"/>
-                                    <segue destination="qm6-yv-3EV" kind="modal" id="3iJ-Et-vlG"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="600.png" translatesAutoresizingMaskIntoConstraints="NO" id="XuN-rA-Fl5">
@@ -360,6 +361,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awC-YC-P4Z">
+                                <rect key="frame" x="0.0" y="82" width="224" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12202825389999999" green="1" blue="0.0017448073" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="ExpressionButton1" destination="qm6-yv-3EV" eventType="touchUpInside" id="XgI-tX-UKw"/>
+                                    <action selector="illustrationButton1" destination="9yS-ph-cRh" eventType="touchUpInside" id="wqn-WL-nsK"/>
+                                    <segue destination="t6Y-a0-jhi" kind="modal" id="8Dn-kc-zoD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwW-fe-EJc">
+                                <rect key="frame" x="256" y="81" width="224" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12202825389999999" green="1" blue="0.0017448073" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="ExpressionButton2" destination="qm6-yv-3EV" eventType="touchUpInside" id="qhM-6C-UPE"/>
+                                    <action selector="illustrationButton2" destination="9yS-ph-cRh" eventType="touchUpInside" id="Sju-Xv-WVd"/>
+                                    <segue destination="t6Y-a0-jhi" kind="modal" id="bro-5N-fyF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvR-IX-JCF">
+                                <rect key="frame" x="10" y="80" width="224" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12202825389999999" green="1" blue="0.0017448073" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="ExpressionButton5" destination="qm6-yv-3EV" eventType="touchUpInside" id="3RD-ee-6TU"/>
+                                    <action selector="illustrationButton5" destination="9yS-ph-cRh" eventType="touchUpInside" id="68n-OX-qlR"/>
+                                    <segue destination="t6Y-a0-jhi" kind="modal" id="e6W-sv-tEx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ze-Ew-uCt">
+                                <rect key="frame" x="250" y="82" width="224" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12202825389999999" green="1" blue="0.0017448073" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="ExpressionButton4" destination="qm6-yv-3EV" eventType="touchUpInside" id="H1E-BJ-9Mi"/>
+                                    <action selector="illustrationButton4" destination="9yS-ph-cRh" eventType="touchUpInside" id="hB5-4h-8lh"/>
+                                    <segue destination="t6Y-a0-jhi" kind="modal" id="arn-re-Ig2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ke-7l-TM4">
+                                <rect key="frame" x="10" y="81" width="224" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12202825389999999" green="1" blue="0.0017448073" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="ExpressionButton3" destination="qm6-yv-3EV" eventType="touchUpInside" id="RSP-22-hlI"/>
+                                    <action selector="illustrationButton3" destination="9yS-ph-cRh" eventType="touchUpInside" id="lgK-a5-Pex"/>
+                                    <segue destination="t6Y-a0-jhi" kind="modal" id="VOE-G8-jO3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3x-cb-K22">
+                                <rect key="frame" x="250" y="80" width="224" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12202825389999999" green="1" blue="0.0017448073" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="ExpressionButton6" destination="qm6-yv-3EV" eventType="touchUpInside" id="bRg-xI-Ghr"/>
+                                    <action selector="illustrationButton6" destination="9yS-ph-cRh" eventType="touchUpInside" id="mtt-4T-y7G"/>
+                                    <segue destination="t6Y-a0-jhi" kind="modal" id="wU8-ib-q6j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kY5-jh-5gG">
+                                <rect key="frame" x="10" y="80" width="224" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12202825389999999" green="1" blue="0.0017448073" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="ExpressionButton7" destination="qm6-yv-3EV" eventType="touchUpInside" id="gce-55-pGT"/>
+                                    <action selector="illustrationButton6" destination="9yS-ph-cRh" eventType="touchUpInside" id="cTR-2c-pdc"/>
+                                    <segue destination="t6Y-a0-jhi" kind="modal" id="1Jh-hN-1M9"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sutoraipu.png" translatesAutoresizingMaskIntoConstraints="NO" id="82f-3Z-hFx">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="321"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -372,34 +443,6 @@
                                 <rect key="frame" x="416" y="0.0" width="44" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B67-sV-SdP">
-                                <rect key="frame" x="0.0" y="80" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kmA-FS-fV1">
-                                <rect key="frame" x="240" y="80" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c8Z-Lj-BGg">
-                                <rect key="frame" x="480" y="81" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e1Z-mh-GJx">
-                                <rect key="frame" x="720" y="81" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qsp-CL-Gu2">
-                                <rect key="frame" x="960" y="81" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tx8-4S-UHd">
-                                <rect key="frame" x="1200" y="81" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rrx-Ff-Nln">
-                                <rect key="frame" x="1441" y="81" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGm-6z-guv">
                                 <rect key="frame" x="414" y="4" width="46" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -408,16 +451,6 @@
                                 </state>
                                 <connections>
                                     <action selector="next" destination="qm6-yv-3EV" eventType="touchUpInside" id="bgu-zc-tsX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZC-3p-V6d">
-                                <rect key="frame" x="0.0" y="81" width="480" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="t6Y-a0-jhi" kind="modal" id="coC-SZ-36U"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkp-ER-GsT">
@@ -430,6 +463,34 @@
                                     <action selector="back" destination="qm6-yv-3EV" eventType="touchUpInside" id="QKm-Zo-YYR"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ライオン　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="IfE-WW-t6U">
+                                <rect key="frame" x="-6" y="81" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ゾウ　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="tV8-Ov-oKi">
+                                <rect key="frame" x="242" y="80" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ひまわり　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="acd-yP-w6D">
+                                <rect key="frame" x="474" y="81" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="飛行機　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="cIX-je-JYV">
+                                <rect key="frame" x="954" y="81" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="車　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZTe-cX-XrT">
+                                <rect key="frame" x="1202" y="80" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="雪だるま全身　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="bsd-2W-W42">
+                                <rect key="frame" x="722" y="80" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="飛行機　１笑顔イラスト.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wkr-BL-ymw">
+                                <rect key="frame" x="1432" y="80" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -438,13 +499,20 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1920" height="320"/>
                     <connections>
-                        <outlet property="Expression1" destination="B67-sV-SdP" id="BeZ-db-aOk"/>
-                        <outlet property="Expression2" destination="kmA-FS-fV1" id="CX8-a7-PqD"/>
-                        <outlet property="Expression3" destination="c8Z-Lj-BGg" id="xdz-EQ-PKm"/>
-                        <outlet property="Expression4" destination="e1Z-mh-GJx" id="cqQ-3e-2wL"/>
-                        <outlet property="Expression5" destination="Qsp-CL-Gu2" id="qKf-1k-V5D"/>
-                        <outlet property="Expression6" destination="Tx8-4S-UHd" id="8bW-ag-nvS"/>
-                        <outlet property="Expression7" destination="Rrx-Ff-Nln" id="8Cz-OP-luo"/>
+                        <outlet property="Expression1" destination="IfE-WW-t6U" id="U49-Zt-RFt"/>
+                        <outlet property="Expression2" destination="tV8-Ov-oKi" id="1I4-Ul-RBh"/>
+                        <outlet property="Expression3" destination="acd-yP-w6D" id="oZI-kF-fIM"/>
+                        <outlet property="Expression4" destination="bsd-2W-W42" id="5PM-DT-9bO"/>
+                        <outlet property="Expression5" destination="cIX-je-JYV" id="k4u-yt-BEN"/>
+                        <outlet property="Expression6" destination="ZTe-cX-XrT" id="pPQ-Yf-Ju3"/>
+                        <outlet property="Expression7" destination="Wkr-BL-ymw" id="uzN-yO-mjJ"/>
+                        <outlet property="ExpressionButton1" destination="awC-YC-P4Z" id="FTt-5r-3WE"/>
+                        <outlet property="ExpressionButton2" destination="NwW-fe-EJc" id="pBE-wJ-Sri"/>
+                        <outlet property="ExpressionButton3" destination="3Ke-7l-TM4" id="YMN-BQ-dB4"/>
+                        <outlet property="ExpressionButton4" destination="8ze-Ew-uCt" id="h2J-oA-9uW"/>
+                        <outlet property="ExpressionButton5" destination="HvR-IX-JCF" id="Vrq-LM-xde"/>
+                        <outlet property="ExpressionButton6" destination="q3x-cb-K22" id="lgS-Ko-EGu"/>
+                        <outlet property="ExpressionButton7" destination="kY5-jh-5gG" id="spa-0r-CCs"/>
                         <outlet property="Expressionback" destination="5zQ-Yg-7XH" id="WmH-fa-vyU"/>
                         <outlet property="Expressionbutton" destination="Zkp-ER-GsT" id="pnX-pe-nn2"/>
                         <outlet property="Expressionbutton1" destination="cGm-6z-guv" id="17B-Vl-JcN"/>
@@ -472,7 +540,6 @@
         <image name="yellow.png" width="448" height="301"/>
         <image name="ひまわり　１笑顔イラスト.png" width="441" height="581"/>
         <image name="ゾウ　１笑顔イラスト.png" width="442" height="384"/>
-        <image name="ライオン　１笑顔.png" width="470" height="554"/>
         <image name="ライオン　１笑顔イラスト.png" width="468" height="554"/>
         <image name="車　１笑顔イラスト.png" width="426" height="369"/>
         <image name="雪だるま全身　１笑顔イラスト.png" width="456" height="738"/>
@@ -484,6 +551,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="xhr-16-IIf"/>
+        <segue reference="1Jh-hN-1M9"/>
+        <segue reference="cYs-3d-Bss"/>
     </inferredMetricsTieBreakers>
 </document>

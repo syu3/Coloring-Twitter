@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 mycompany. All rights reserved.
 //
 int hyojo;
-
+int illust;
 #import "ViewController.h"
 
 @interface IllustrationViewController : ViewController{
