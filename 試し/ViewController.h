@@ -21,8 +21,9 @@
         int c;
         UIImageView*tweetImageView;
     IBOutlet UIImageView*imageview;
-
-
+    IBOutlet UIImageView*white21;
+    IBOutlet UIImageView*white22;
+    IBOutlet UIImageView*white23;
 }
 -(IBAction)red;
 -(IBAction)green;

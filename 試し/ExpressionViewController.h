@@ -12,6 +12,7 @@ int hyojo1;
 @interface ExpressionViewController : ViewController{
 
     int kaisu1;
+    int hyojoirast;
     IBOutlet UIButton*Expressionbutton;
     IBOutlet UIImageView*Expressionnext;
     IBOutlet UIButton*Expressionbutton1;

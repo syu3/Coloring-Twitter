@@ -28,6 +28,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    
+    
+    Expression1 = [[UIImageView alloc]init];
+    //タップを有効化する。
+    Expression1.userInteractionEnabled = YES;
+    
+    Expression2 = [[UIImageView alloc]init];
+    //タップを有効化する。
+    Expression2.userInteractionEnabled = YES;
+    
+    Expression3 = [[UIImageView alloc]init];
+    //タップを有効化する。
+    Expression3.userInteractionEnabled = YES;
+    
+    Expression4 = [[UIImageView alloc]init];
+    //タップを有効化する。
+    Expression4.userInteractionEnabled = YES;
+    
+    Expression5 = [[UIImageView alloc]init];
+    //タップを有効化する。
+    Expression5.userInteractionEnabled = YES;
+    
+    Expression6 = [[UIImageView alloc]init];
+    //タップを有効化する。
+    Expression6.userInteractionEnabled = YES;
+    
+
+    
+    
+    
+    
+    
     Expressionbutton.alpha = 0.0;
     Expressionback.alpha = 0.0;
     NSLog(@"%d",hyojo);
@@ -97,181 +131,40 @@
 
 }
 
--(IBAction)ExpressionButton1{
-    if (hyojo == 1) {
-        
-    
-    Expression1.image = [UIImage imageNamed:@"ライオン　１笑顔.png"];
-    Expression2.image = [UIImage imageNamed:@"ライオン　2笑顔.png"];
-    }else if (hyojo == 2){
-        Expression1.image = [UIImage imageNamed:@"ゾウ　１笑顔.png"];
-        Expression2.image = [UIImage imageNamed:@"ゾウ　2笑顔.png"];
-    }else if (hyojo == 3){
-        Expression1.image = [UIImage imageNamed:@"ひまわり　１笑顔.png"];
-        Expression2.image = [UIImage imageNamed:@"ひまわり　2笑顔.png"];
-    }else if (hyojo == 4){
-        Expression1.image = [UIImage imageNamed:@"雪だるま全身　１笑顔.png"];
-        Expression2.image = [UIImage imageNamed:@"雪だるま全身　2笑顔.png"];
-    }else if (hyojo == 5){
-        Expression1.image = [UIImage imageNamed:@"飛行機　１笑顔.png"];
-        Expression2.image = [UIImage imageNamed:@"飛行機　2笑顔.png"];
-    }else if (hyojo == 6){
-        Expression1.image = [UIImage imageNamed:@"車　１笑顔.png"];
-        Expression2.image = [UIImage imageNamed:@"車　2笑顔.png"];
-    }
-    //--------------------------------------------------------------------
-    //このコードをイラストの数だけ書く。名前を変えて！
-    //7番目も書く
-    //
-    
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch *touch = [touches anyObject];
 
-
-
-    hyojo1 = 1;
-    NSLog(@"%d",hyojo1);
-
-}
--(IBAction)ExpressionButton2{
-    if (hyojo == 1) {
-        
-        
-        Expression1.image = [UIImage imageNamed:@"ライオン　１笑顔.png"];
-        Expression2.image = [UIImage imageNamed:@"ライオン　2笑顔.png"];
-    }else if (hyojo == 2){
-        Expression1.image = [UIImage imageNamed:@"ゾウ　１笑顔.png"];
-        Expression2.image = [UIImage imageNamed:@"ゾウ　2笑顔.png"];
-    }else if (hyojo == 3){
-        Expression1.image = [UIImage imageNamed:@"ひまわり　１笑顔.png"];
-        Expression2.image = [UIImage imageNamed:@"ひまわり　2笑顔.png"];
-    }else if (hyojo == 4){
-        Expression1.image = [UIImage imageNamed:@"雪だるま全身　１笑顔.png"];
-        Expression2.image = [UIImage imageNamed:@"雪だるま全身　2笑顔.png"];
-    }else if (hyojo == 5){
-        Expression1.image = [UIImage imageNamed:@"飛行機　１笑顔.png"];
-        Expression2.image = [UIImage imageNamed:@"飛行機　2笑顔.png"];
-    }else if (hyojo == 6){
-        Expression1.image = [UIImage imageNamed:@"車　１笑顔.png"];
-        Expression2.image = [UIImage imageNamed:@"車　2笑顔.png"];
-    }
-        hyojo1 = 2;
-
-        NSLog(@"%d",hyojo1);
+    switch (touch.view.tag) {
+        case 1:
+            // 1のタグがタップされた場合の処理を記述
+            hyojo1 = 1;
+            break;
+        case 2:
+            // 2のタグがタップされた場合の処理を記述
+            hyojo1 = 2;
+            break;
+        case 3:
+            // 3のタグがタップされた場合の処理を記述
+            hyojo1 = 3;
+            break;
+        case 4:
+            // 1のタグがタップされた場合の処理を記述
+            
+            hyojo1 = 4;
+            break;
+        case 5:
+            // 2のタグがタップされた場合の処理を記述
+            hyojo1 = 5;
+            break;
+        case 6:
+            // 3のタグがタップされた場合の処理を記述
+            hyojo1 = 6;
+            break;
+        default:
+            break;
 
 }
--(IBAction)ExpressionButton3{
-    if (hyojo == 1) {
-        
-        
-        Expression1.image = [UIImage imageNamed:@"ライオン　3ムスッと.png"];
-        Expression2.image = [UIImage imageNamed:@"ライオン　4怒.png"];
-    }else if (hyojo == 2){
-        Expression1.image = [UIImage imageNamed:@"ゾウ　3ムスッと.png"];
-        Expression2.image = [UIImage imageNamed:@"ゾウ　4怒.png"];
-    }else if (hyojo == 3){
-        Expression1.image = [UIImage imageNamed:@"ひまわり　3ムスッと.png"];
-        Expression2.image = [UIImage imageNamed:@"ひまわり　4ニコニコ.png"];
-    }else if (hyojo == 4){
-        Expression1.image = [UIImage imageNamed:@"雪だるま全身　3ムスッと.png"];
-        Expression2.image = [UIImage imageNamed:@"雪だるま全身　4.png"];
-    }else if (hyojo == 5){
-        Expression1.image = [UIImage imageNamed:@"飛行機　3ムスッと.png"];
-        Expression2.image = [UIImage imageNamed:@"飛行機　4ニコニコ.png"];
-    }else if (hyojo == 6){
-        Expression1.image = [UIImage imageNamed:@"車　3ムスッと.png"];
-        Expression2.image = [UIImage imageNamed:@"車　4.png"];
-    }
-        hyojo1 = 3;
 
-
-        NSLog(@"%d",hyojo1);
-}
--(IBAction)ExpressionButton4{
-    if (hyojo == 1) {
-        
-        
-        Expression1.image = [UIImage imageNamed:@"ライオン　3ムスッと.png"];
-        Expression2.image = [UIImage imageNamed:@"ライオン　4怒.png"];
-    }else if (hyojo == 2){
-        Expression1.image = [UIImage imageNamed:@"ゾウ　3ムスッと.png"];
-        Expression2.image = [UIImage imageNamed:@"ゾウ　4怒.png"];
-    }else if (hyojo == 3){
-        Expression1.image = [UIImage imageNamed:@"ひまわり　3ムスッと.png"];
-        Expression2.image = [UIImage imageNamed:@"ひまわり　4ニコニコ.png"];
-    }else if (hyojo == 4){
-        Expression1.image = [UIImage imageNamed:@"雪だるま全身　3ムスッと.png"];
-        Expression2.image = [UIImage imageNamed:@"雪だるま全身　4.png"];
-    }else if (hyojo == 5){
-        Expression1.image = [UIImage imageNamed:@"飛行機　3ムスッと.png"];
-        Expression2.image = [UIImage imageNamed:@"飛行機　4ニコニコ.png"];
-    }else if (hyojo == 6){
-        Expression1.image = [UIImage imageNamed:@"車　3ムスッと.png"];
-        Expression2.image = [UIImage imageNamed:@"車　4.png"];
-    }
-    hyojo1 = 4;
-
-        NSLog(@"%d",hyojo1);
-    
-}
--(IBAction)ExpressionButton5{
-    if (hyojo == 1) {
-        
-        
-        Expression1.image = [UIImage imageNamed:@"ライオン　5ニコニコ.png"];
-        Expression2.image = [UIImage imageNamed:@"ライオン　6泣.png"];
-    }else if (hyojo == 2){
-        Expression1.image = [UIImage imageNamed:@"ゾウ　5ニコニコ.png"];
-        Expression2.image = [UIImage imageNamed:@"ゾウ　６泣.png"];
-    }else if (hyojo == 3){
-        Expression1.image = [UIImage imageNamed:@"ひまわり　5怒.png"];
-        Expression2.image = [UIImage imageNamed:@"ひまわり　6焦.png"];
-    }else if (hyojo == 4){
-        Expression1.image = [UIImage imageNamed:@"雪だるま全身　5怒.png"];
-        Expression2.image = [UIImage imageNamed:@"雪だるま全身　6焦.png"];
-    }else if (hyojo == 5){
-        Expression1.image = [UIImage imageNamed:@"飛行機　5怒.png"];
-        Expression2.image = [UIImage imageNamed:@"飛行機　6泣.png"];
-    }else if (hyojo == 6){
-        Expression1.image = [UIImage imageNamed:@"車　5怒.png"];
-        Expression2.image = [UIImage imageNamed:@"車　6焦.png"];
-    }
-    hyojo1 = 5;
-
-    
-        NSLog(@"%d",hyojo1);
-    //ここも書く--------------------
-}
-
--(IBAction)ExpressionButton6{
-    if (hyojo == 1) {
-        
-        
-        Expression1.image = [UIImage imageNamed:@"ライオン　5ニコニコ.png"];
-        Expression2.image = [UIImage imageNamed:@"ライオン　6泣.png"];
-    }else if (hyojo == 2){
-        Expression1.image = [UIImage imageNamed:@"ゾウ　5ニコニコ.png"];
-        Expression2.image = [UIImage imageNamed:@"ゾウ　６泣.png"];
-    }else if (hyojo == 3){
-        Expression1.image = [UIImage imageNamed:@"ひまわり　5怒.png"];
-        Expression2.image = [UIImage imageNamed:@"ひまわり　6焦.png"];
-    }else if (hyojo == 4){
-        Expression1.image = [UIImage imageNamed:@"雪だるま全身　5怒.png"];
-        Expression2.image = [UIImage imageNamed:@"雪だるま全身　6焦.png"];
-    }else if (hyojo == 5){
-        Expression1.image = [UIImage imageNamed:@"飛行機　5怒.png"];
-        Expression2.image = [UIImage imageNamed:@"飛行機　6泣.png"];
-    }else if (hyojo == 6){
-        Expression1.image = [UIImage imageNamed:@"車　5怒.png"];
-        Expression2.image = [UIImage imageNamed:@"車　6焦.png"];
-        NSLog(@"%d",hyojo1);
-    hyojo1 = 6;
-        //ここも書く--------------------
-}
-}
--(IBAction)ExpressionButton7{
-
-
-    hyojo1 = 7;
-        NSLog(@"%d",hyojo1);
 }
 
 

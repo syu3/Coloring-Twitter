@@ -28,6 +28,11 @@
     [self.view insertSubview:canvas atIndex:0];
     rgb = 0;
     c = 0;
+    if (hyojo == 1) {
+        CGRect rect = CGRectMake(0, 0, 800, 800);
+        white21.frame = rect;
+        white21.backgroundColor = [UIColor blackColor];
+    }
 
     
     if (hyojo == 1 && hyojo1 == 1) {
