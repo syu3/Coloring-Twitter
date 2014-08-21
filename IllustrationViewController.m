@@ -26,16 +26,17 @@
     back.alpha = 0.0;
 
 
-    if (kaisu1 == 0) {
+
         illustrationButton1.alpha = 1.0;
         illustrationButton2.alpha = 1.0;
         illustrationButton3.alpha = 0.0;
         illustrationButton4.alpha = 0.0;
         illustrationButton5.alpha = 0.0;
         illustrationButton6.alpha = 0.0;
-    }
+    
 }
 -(IBAction)illustrationButton1{
+    NSLog(@"illustrationButton1");
 
     hyojo = 1;
     illustration1.image = [UIImage imageNamed:@"ライオン　１笑顔イラスト.png"];
@@ -45,6 +46,7 @@
 
 }
 -(IBAction)illustrationButton2{
+        NSLog(@"illustrationButton2");
 
     hyojo = 2;
     illustration1.image = [UIImage imageNamed:@"ライオン　１笑顔イラスト.png"];
@@ -53,6 +55,7 @@
 
 }
 -(IBAction)illustrationButton3{
+        NSLog(@"illustrationButton3");
     hyojo = 3;
     
     illustration1.image = [UIImage imageNamed:@"ひまわり　１笑顔イラスト.png"];
@@ -61,6 +64,7 @@
 
 }
 -(IBAction)illustrationButton4{
+        NSLog(@"illustrationButton4");
     hyojo = 4;
     
     illustration1.image = [UIImage imageNamed:@"ひまわり　１笑顔イラスト.png"];
@@ -70,6 +74,7 @@
 
 }
 -(IBAction)illustrationButton5{
+        NSLog(@"illustrationButton5");
     hyojo = 5;
     
     illustration1.image = [UIImage imageNamed:@"飛行機　１笑顔イラスト.png"];
@@ -79,6 +84,7 @@
 
 }
 -(IBAction)illustrationButton6{
+        NSLog(@"illustrationButton6");
     hyojo = 6;
     
     illustration1.image = [UIImage imageNamed:@"飛行機　１笑顔イラスト.png"];

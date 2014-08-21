@@ -24,6 +24,7 @@
     IBOutlet UIImageView*white21;
     IBOutlet UIImageView*white22;
     IBOutlet UIImageView*white23;
+        int number1;
 }
 -(IBAction)red;
 -(IBAction)green;
@@ -34,4 +35,6 @@
 -(IBAction)shou;
 -(IBAction)dai;
 -(IBAction)tweet;
+-(IBAction)back;
+-(IBAction)next;
 @end
