@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		4B554D6F1967CEDF00033579 /* twitter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B554D6E1967CEDF00033579 /* twitter.jpg */; };
 		4B554D711967CEE300033579 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B554D701967CEE300033579 /* back.png */; };
-		4B85DC3C199CE49E0080DC97 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B85DC3B199CE49E0080DC97 /* blue.png */; };
+		4BAEA6C719A82FB70031E18F /* big.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEA6C619A82FB70031E18F /* big.png */; };
+		4BAEA6C919A831360031E18F /* tyu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEA6C819A831360031E18F /* tyu.png */; };
+		4BAEA6CB19A831BE0031E18F /* small.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BAEA6CA19A831BE0031E18F /* small.png */; };
 		4BC00A25197F943E00631985 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC00A24197F943E00631985 /* QuartzCore.framework */; };
 		4BCCFE8D19691CD300C1FEF4 /* nex1t.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCCFE8C19691CD300C1FEF4 /* nex1t.png */; };
 		4BCE79B4199E01B200CBB8A1 /* ゾウ　2笑顔.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BCE79AE199E01B200CBB8A1 /* ゾウ　2笑顔.png */; };
@@ -59,11 +61,6 @@
 		4BD2CC2F199C622C00278B86 /* 雪だるま全身　１笑顔.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD2CC2E199C622C00278B86 /* 雪だるま全身　１笑顔.png */; };
 		4BD3F6761998441D00244668 /* IllustrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3F6751998441D00244668 /* IllustrationViewController.m */; };
 		4BD3F6791998445600244668 /* ExpressionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3F6781998445600244668 /* ExpressionViewController.m */; };
-		4BD3F68D19985B4F00244668 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3F68719985B4F00244668 /* white.png */; };
-		4BD3F68F19985B4F00244668 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3F68919985B4F00244668 /* black.png */; };
-		4BD3F69019985B4F00244668 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3F68A19985B4F00244668 /* yellow.png */; };
-		4BD3F69119985B4F00244668 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3F68B19985B4F00244668 /* green.png */; };
-		4BD3F69219985B4F00244668 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3F68C19985B4F00244668 /* red.png */; };
 		4BD76D851934BA17004F3C19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD76D841934BA17004F3C19 /* Foundation.framework */; };
 		4BD76D871934BA17004F3C19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD76D861934BA17004F3C19 /* CoreGraphics.framework */; };
 		4BD76D891934BA17004F3C19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD76D881934BA17004F3C19 /* UIKit.framework */; };
@@ -84,6 +81,12 @@
 		4BDA7FE419A0C7E900835477 /* 車　１笑顔イラスト.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BDA7FE319A0C7E900835477 /* 車　１笑顔イラスト.png */; };
 		4BDA7FE619A0C7FD00835477 /* ライオン　１笑顔イラスト.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BDA7FE519A0C7FD00835477 /* ライオン　１笑顔イラスト.png */; };
 		4BDA7FE819A0C80800835477 /* ひまわり　１笑顔イラスト.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BDA7FE719A0C80800835477 /* ひまわり　１笑顔イラスト.png */; };
+		4BDB246619A72F480000FB1B /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BDB246019A72F480000FB1B /* black.png */; };
+		4BDB246719A72F480000FB1B /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BDB246119A72F480000FB1B /* blue.png */; };
+		4BDB246819A72F480000FB1B /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BDB246219A72F480000FB1B /* green.png */; };
+		4BDB246919A72F480000FB1B /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BDB246319A72F480000FB1B /* red.png */; };
+		4BDB246A19A72F480000FB1B /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BDB246419A72F480000FB1B /* white.png */; };
+		4BDB246B19A72F480000FB1B /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BDB246519A72F480000FB1B /* yellow.png */; };
 		4BE1BB9D194AF80E0079F1AE /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE1BB9C194AF80E0079F1AE /* Accounts.framework */; };
 		4BE1BB9F194AF8150079F1AE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE1BB9E194AF8150079F1AE /* Social.framework */; };
 /* End PBXBuildFile section */
@@ -101,7 +104,9 @@
 /* Begin PBXFileReference section */
 		4B554D6E1967CEDF00033579 /* twitter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter.jpg; sourceTree = "<group>"; };
 		4B554D701967CEE300033579 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
-		4B85DC3B199CE49E0080DC97 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		4BAEA6C619A82FB70031E18F /* big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = big.png; sourceTree = "<group>"; };
+		4BAEA6C819A831360031E18F /* tyu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tyu.png; sourceTree = "<group>"; };
+		4BAEA6CA19A831BE0031E18F /* small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small.png; sourceTree = "<group>"; };
 		4BC00A24197F943E00631985 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4BCCFE8C19691CD300C1FEF4 /* nex1t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nex1t.png; sourceTree = "<group>"; };
 		4BCE79AE199E01B200CBB8A1 /* ゾウ　2笑顔.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ゾウ　2笑顔.png"; sourceTree = "<group>"; };
@@ -153,11 +158,6 @@
 		4BD3F6751998441D00244668 /* IllustrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IllustrationViewController.m; path = ../IllustrationViewController.m; sourceTree = "<group>"; };
 		4BD3F6771998445600244668 /* ExpressionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpressionViewController.h; sourceTree = "<group>"; };
 		4BD3F6781998445600244668 /* ExpressionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpressionViewController.m; sourceTree = "<group>"; };
-		4BD3F68719985B4F00244668 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
-		4BD3F68919985B4F00244668 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
-		4BD3F68A19985B4F00244668 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
-		4BD3F68B19985B4F00244668 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
-		4BD3F68C19985B4F00244668 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		4BD76D811934BA17004F3C19 /* 試し.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "試し.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD76D841934BA17004F3C19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BD76D861934BA17004F3C19 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -183,6 +183,12 @@
 		4BDA7FE319A0C7E900835477 /* 車　１笑顔イラスト.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "車　１笑顔イラスト.png"; sourceTree = "<group>"; };
 		4BDA7FE519A0C7FD00835477 /* ライオン　１笑顔イラスト.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ライオン　１笑顔イラスト.png"; sourceTree = "<group>"; };
 		4BDA7FE719A0C80800835477 /* ひまわり　１笑顔イラスト.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひまわり　１笑顔イラスト.png"; sourceTree = "<group>"; };
+		4BDB246019A72F480000FB1B /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
+		4BDB246119A72F480000FB1B /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		4BDB246219A72F480000FB1B /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		4BDB246319A72F480000FB1B /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		4BDB246419A72F480000FB1B /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+		4BDB246519A72F480000FB1B /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
 		4BE1BB9C194AF80E0079F1AE /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4BE1BB9E194AF8150079F1AE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -306,12 +312,12 @@
 		4BD3F67A1998587D00244668 /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				4BD3F68719985B4F00244668 /* white.png */,
-				4BD3F68919985B4F00244668 /* black.png */,
-				4BD3F68A19985B4F00244668 /* yellow.png */,
-				4BD3F68B19985B4F00244668 /* green.png */,
-				4B85DC3B199CE49E0080DC97 /* blue.png */,
-				4BD3F68C19985B4F00244668 /* red.png */,
+				4BDB246019A72F480000FB1B /* black.png */,
+				4BDB246119A72F480000FB1B /* blue.png */,
+				4BDB246219A72F480000FB1B /* green.png */,
+				4BDB246319A72F480000FB1B /* red.png */,
+				4BDB246419A72F480000FB1B /* white.png */,
+				4BDB246519A72F480000FB1B /* yellow.png */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -377,6 +383,9 @@
 		4BD76D8B1934BA17004F3C19 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4BAEA6C619A82FB70031E18F /* big.png */,
+				4BAEA6C819A831360031E18F /* tyu.png */,
+				4BAEA6CA19A831BE0031E18F /* small.png */,
 				4BCE79F4199E065E00CBB8A1 /* 600.png */,
 				4BCE79F5199E065E00CBB8A1 /* hosi.png */,
 				4BCE79F6199E065E00CBB8A1 /* sutoraipu.png */,
@@ -491,19 +500,18 @@
 				4BD2CC25199C4B1B00278B86 /* ライオン　１笑顔.png in Resources */,
 				4BCE79CE199E01CA00CBB8A1 /* 雪だるま全身　4.png in Resources */,
 				4BCE79DB199E01EC00CBB8A1 /* 車　5怒.png in Resources */,
+				4BDB246719A72F480000FB1B /* blue.png in Resources */,
 				4BD76D9D1934BA17004F3C19 /* Images.xcassets in Resources */,
 				4BD2CC23199C4A2E00278B86 /* 飛行機　１笑顔.png in Resources */,
 				4BCE79DD199E01EC00CBB8A1 /* 車　7泣.png in Resources */,
 				4BCE79C4199E01BB00CBB8A1 /* 飛行機　6泣.png in Resources */,
 				4BCE79B5199E01B200CBB8A1 /* ゾウ　3ムスッと.png in Resources */,
-				4BD3F69119985B4F00244668 /* green.png in Resources */,
 				4BCE79DC199E01EC00CBB8A1 /* 車　6焦.png in Resources */,
 				4BCE79B8199E01B200CBB8A1 /* ゾウ　６泣.png in Resources */,
 				4BCE79E7199E020700CBB8A1 /* ライオン　6泣.png in Resources */,
 				4BCE79D0199E01CA00CBB8A1 /* 雪だるま全身　6焦.png in Resources */,
 				4B554D711967CEE300033579 /* back.png in Resources */,
 				4BCE79D9199E01EC00CBB8A1 /* 車　3ムスッと.png in Resources */,
-				4BD3F68D19985B4F00244668 /* white.png in Resources */,
 				4BDA7FE019A0C7CE00835477 /* 飛行機　１笑顔イラスト.png in Resources */,
 				4BD2CC19199C493500278B86 /* ゾウ　１笑顔.png in Resources */,
 				4BD76D8F1934BA17004F3C19 /* InfoPlist.strings in Resources */,
@@ -512,7 +520,6 @@
 				4BCE79CF199E01CA00CBB8A1 /* 雪だるま全身　5怒.png in Resources */,
 				4BCE79CD199E01CA00CBB8A1 /* 雪だるま全身　3ムスッと.png in Resources */,
 				4BDA7FDE19A0C7C000835477 /* ゾウ　１笑顔イラスト.png in Resources */,
-				4BD3F69219985B4F00244668 /* red.png in Resources */,
 				4BCE79B7199E01B200CBB8A1 /* ゾウ　5ニコニコ.png in Resources */,
 				4BDA7FE219A0C7D900835477 /* 雪だるま全身　１笑顔イラスト.png in Resources */,
 				4BCE79D1199E01CA00CBB8A1 /* 雪だるま全身　７泣.png in Resources */,
@@ -525,30 +532,35 @@
 				4BCE79EE199E021B00CBB8A1 /* ひまわり　2笑顔.png in Resources */,
 				4BCE79E3199E020700CBB8A1 /* ライオン　2笑顔.png in Resources */,
 				4BCE79F2199E021B00CBB8A1 /* ひまわり　6焦.png in Resources */,
+				4BAEA6CB19A831BE0031E18F /* small.png in Resources */,
+				4BDB246A19A72F480000FB1B /* white.png in Resources */,
 				4BCE79C3199E01BB00CBB8A1 /* 飛行機　5怒.png in Resources */,
 				4BDA7FE819A0C80800835477 /* ひまわり　１笑顔イラスト.png in Resources */,
 				4BCE79E6199E020700CBB8A1 /* ライオン　5ニコニコ.png in Resources */,
 				4BCCFE8D19691CD300C1FEF4 /* nex1t.png in Resources */,
 				4BCE79C5199E01BB00CBB8A1 /* 飛行機　7焦.png in Resources */,
 				4BCE79B6199E01B200CBB8A1 /* ゾウ　4怒.png in Resources */,
+				4BAEA6C719A82FB70031E18F /* big.png in Resources */,
 				4BD2CC2A199C5CC800278B86 /* Untitled-1.png in Resources */,
 				4BCE79F1199E021B00CBB8A1 /* ひまわり　5怒.png in Resources */,
-				4BD3F69019985B4F00244668 /* yellow.png in Resources */,
 				4BCE79E5199E020700CBB8A1 /* ライオン　4怒.png in Resources */,
 				4BCE79C1199E01BB00CBB8A1 /* 飛行機　3ムスッと.png in Resources */,
 				4BD2CC2F199C622C00278B86 /* 雪だるま全身　１笑顔.png in Resources */,
 				4BCE79F7199E065E00CBB8A1 /* 600.png in Resources */,
 				4B554D6F1967CEDF00033579 /* twitter.jpg in Resources */,
-				4BD3F68F19985B4F00244668 /* black.png in Resources */,
 				4BCE79B4199E01B200CBB8A1 /* ゾウ　2笑顔.png in Resources */,
+				4BAEA6C919A831360031E18F /* tyu.png in Resources */,
 				4BCE79C2199E01BB00CBB8A1 /* 飛行機　4ニコニコ.png in Resources */,
 				4BCE79F0199E021B00CBB8A1 /* ひまわり　4ニコニコ.png in Resources */,
 				4BCE79C0199E01BB00CBB8A1 /* 飛行機　2笑顔.png in Resources */,
+				4BDB246B19A72F480000FB1B /* yellow.png in Resources */,
 				4BDA7FE619A0C7FD00835477 /* ライオン　１笑顔イラスト.png in Resources */,
-				4B85DC3C199CE49E0080DC97 /* blue.png in Resources */,
 				4BDA7FE419A0C7E900835477 /* 車　１笑顔イラスト.png in Resources */,
+				4BDB246919A72F480000FB1B /* red.png in Resources */,
 				4BCE79F8199E065E00CBB8A1 /* hosi.png in Resources */,
+				4BDB246819A72F480000FB1B /* green.png in Resources */,
 				4BD76D981934BA17004F3C19 /* Main.storyboard in Resources */,
+				4BDB246619A72F480000FB1B /* black.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

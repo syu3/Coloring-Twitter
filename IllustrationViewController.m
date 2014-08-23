@@ -36,6 +36,7 @@
     
 }
 -(IBAction)illustrationButton1{
+    
     NSLog(@"illustrationButton1");
 
     hyojo = 1;

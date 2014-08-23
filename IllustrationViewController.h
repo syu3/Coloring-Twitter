@@ -7,6 +7,7 @@
 //
 int hyojo;
 int illust;
+
 #import "ViewController.h"
 
 @interface IllustrationViewController : ViewController{

@@ -24,7 +24,15 @@
     IBOutlet UIImageView*white21;
     IBOutlet UIImageView*white22;
     IBOutlet UIImageView*white23;
-        int number1;
+    int number1;
+    int number2;
+    int number3;
+    int number4;
+    int number5;
+    int number6;
+    IBOutlet UIImageView*back1;
+    IBOutlet UIImageView*next1;
+
 }
 -(IBAction)red;
 -(IBAction)green;
