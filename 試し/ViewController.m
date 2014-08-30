@@ -28,9 +28,14 @@
         case 1:
             imageview.image = [UIImage imageNamed:@"ライオン　１笑顔.png"];
 
+            image.frame = CGRectMake(0,0,50,50);
+            [image addSubview:image];
+
+            
             break;
         case 2:
             imageview.image = [UIImage imageNamed:@"ゾウ　１笑顔.png"];
+
             
             break;
 
