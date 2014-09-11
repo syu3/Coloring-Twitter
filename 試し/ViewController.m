@@ -40,7 +40,7 @@
             break;
 
         case 3:
-            imageview.image = [UIImage imageNamed:@"ひまわり　１笑顔.png"];
+            imageview.image = [UIImage imageNamed:@"ひ1.png"];
             
             break;
 
@@ -275,6 +275,9 @@
     [self presentModalViewController:twitter animated:YES];
 }
 -(IBAction)next{
+    imag.image = [UIImage imageNamed:@"white2.png"];
+    canvas.image = imag;
+    
     rgb = 0;
 
     if (number1 == 1) {
@@ -315,19 +318,19 @@
                next1.alpha = 0.0;
         
     }else if (hyojo == 3&&number1 == 1) {
-        imageview.image = [UIImage imageNamed:@"ひまわり　2笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ひ2.png"];
 
     }else if (hyojo == 3&&number1 == 2) {
-        imageview.image = [UIImage imageNamed:@"ひまわり　3ムスッと.png"];
+        imageview.image = [UIImage imageNamed:@"ひ3.png"];
     }else if (hyojo == 3&&number1 == 3) {
-        imageview.image = [UIImage imageNamed:@"ひまわり　4ニコニコ.png"];
+        imageview.image = [UIImage imageNamed:@"ひ4.png"];
     }else if (hyojo == 3&&number1 == 4) {
-        imageview.image = [UIImage imageNamed:@"ひまわり　5怒.png"];
+        imageview.image = [UIImage imageNamed:@"ひ5.png"];
     }else if (hyojo == 3&&number1 == 5) {
-        imageview.image = [UIImage imageNamed:@"ひまわり　6焦.png"];
+        imageview.image = [UIImage imageNamed:@"ひ6.png"];
         
     }else if (hyojo == 3&&number1 == 6) {
-        imageview.image = [UIImage imageNamed:@"ひまわり　7泣.png"];
+        imageview.image = [UIImage imageNamed:@"ひ7.png"];
                next1.alpha = 0.0;
         
     }else if (hyojo == 4&&number1 == 1) {

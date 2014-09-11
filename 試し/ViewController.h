@@ -12,6 +12,7 @@
 @interface ViewController : UIViewController{
     IBOutlet UIImageView*image;
     IBOutlet UIImageView*image1;
+    UIImageView*imag;
 
 
     IBOutlet UIImageView *canvas;
