@@ -10,10 +10,11 @@
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
 @interface ViewController : UIViewController{
+    IBOutlet UISlider*slider;
     IBOutlet UIImageView*image;
     IBOutlet UIImageView*image1;
     UIImageView*imag;
-
+    float sl;
 
     IBOutlet UIImageView *canvas;
     CGPoint touchPoint;

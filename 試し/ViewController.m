@@ -84,6 +84,14 @@
 //}
 }
 
+-(IBAction)slider1{
+    slider.maximumValue = 1.0;
+    slider.minimumValue = 0.1;
+    sl = slider;
+    
+}
+
+
 -(IBAction)dai{
     number = 0;
 }
