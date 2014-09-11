@@ -17,12 +17,16 @@
 @implementation ViewController{
     int ope;
     int number;
+    AVAudioPlayer*player;
+
     
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    slider.maximumValue = 1.0;
+    slider.minimumValue = 0.1;
     NSLog(@"%d",hyojo);
     switch (hyojo) {
         case 1:
@@ -85,9 +89,14 @@
 }
 
 -(IBAction)slider1{
-    slider.maximumValue = 1.0;
-    slider.minimumValue = 0.1;
-    sl = slider;
+    NSLog(@"slderが呼ばれているよ");
+
+    
+    double val = floor(slider.value*10);
+    sl = val / 10;
+        NSLog(@"%f",sl);
+    
+    
     
 }
 
@@ -102,6 +111,14 @@
     number = 2;
 }
 -(IBAction)red{
+
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"jump01" ofType:@"mp3"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    if(url){
+        NSError *err = nil;
+        player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
+    }
+    [player play];
     ope = 0;
 }
 -(IBAction)green{
@@ -158,22 +175,22 @@
     }
     switch (ope) {
         case 0:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0, 1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0, sl);
             break;
         case 1:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 1.0, 0.0, 1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 1.0, 0.0, sl);
             break;
         case 2:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 1.0, 1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 1.0, sl);
             break;
         case 3:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 0.0, 1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 0.0, sl);
             break;
         case 4:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.2, 0.2, 0.2, 1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.2, 0.2, 0.2, sl);
             break;
         case 5:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 1.0, 1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 1.0,sl);
             break;
            
         default:

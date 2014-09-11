@@ -50,6 +50,8 @@
 		4BE66C8119BDC31000CF7161 /* ひ5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE66C7A19BDC31000CF7161 /* ひ5.png */; };
 		4BE66C8219BDC31000CF7161 /* ひ6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE66C7B19BDC31000CF7161 /* ひ6.png */; };
 		4BE66C8319BDC31000CF7161 /* ひ7.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BE66C7C19BDC31000CF7161 /* ひ7.png */; };
+		4BEA0ADB19C1CB3200C1382D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BEA0ADA19C1CB3200C1382D /* AVFoundation.framework */; };
+		4BEA0ADD19C1CCB500C1382D /* jump01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4BEA0ADC19C1CCB500C1382D /* jump01.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,8 @@
 		4BE66C7A19BDC31000CF7161 /* ひ5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひ5.png"; sourceTree = "<group>"; };
 		4BE66C7B19BDC31000CF7161 /* ひ6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひ6.png"; sourceTree = "<group>"; };
 		4BE66C7C19BDC31000CF7161 /* ひ7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひ7.png"; sourceTree = "<group>"; };
+		4BEA0ADA19C1CB3200C1382D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4BEA0ADC19C1CCB500C1382D /* jump01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jump01.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BEA0ADB19C1CB3200C1382D /* AVFoundation.framework in Frameworks */,
 				4BC00A25197F943E00631985 /* QuartzCore.framework in Frameworks */,
 				4BD76D871934BA17004F3C19 /* CoreGraphics.framework in Frameworks */,
 				4BE1BB9F194AF8150079F1AE /* Social.framework in Frameworks */,
@@ -225,6 +230,7 @@
 		4BD76D831934BA17004F3C19 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4BEA0ADA19C1CB3200C1382D /* AVFoundation.framework */,
 				4BC00A24197F943E00631985 /* QuartzCore.framework */,
 				4BE1BB9E194AF8150079F1AE /* Social.framework */,
 				4BE1BB9C194AF80E0079F1AE /* Accounts.framework */,
@@ -264,6 +270,7 @@
 			children = (
 				4B5DF35319AF16E900D57A26 /* white2.png */,
 				4BD2FBC419AEB5DC00D5402E /* icon.png */,
+				4BEA0ADC19C1CCB500C1382D /* jump01.mp3 */,
 				4BAEA6C619A82FB70031E18F /* big.png */,
 				4BAEA6C819A831360031E18F /* tyu.png */,
 				4BAEA6CA19A831BE0031E18F /* small.png */,
@@ -400,6 +407,7 @@
 				4BDB246B19A72F480000FB1B /* yellow.png in Resources */,
 				4BDB246919A72F480000FB1B /* red.png in Resources */,
 				4BCE79F8199E065E00CBB8A1 /* hosi.png in Resources */,
+				4BEA0ADD19C1CCB500C1382D /* jump01.mp3 in Resources */,
 				4BE66C7E19BDC31000CF7161 /* ひ2.png in Resources */,
 				4BDB246819A72F480000FB1B /* green.png in Resources */,
 				4BD76D981934BA17004F3C19 /* Main.storyboard in Resources */,

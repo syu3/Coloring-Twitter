@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
+#import <AVFoundation/AVFoundation.h>
 @interface ViewController : UIViewController{
     IBOutlet UISlider*slider;
     IBOutlet UIImageView*image;

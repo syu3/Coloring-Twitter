@@ -213,6 +213,13 @@
                                 <rect key="frame" x="8" y="51" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kfd-vm-3dq">
+                                <rect key="frame" x="349" y="115" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slider1" destination="t6Y-a0-jhi" eventType="touchUpInside" id="BRC-5k-FBN"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -225,6 +232,7 @@
                         <outlet property="canvas" destination="ANK-KD-mPC" id="mpp-eN-Ai4"/>
                         <outlet property="imageview" destination="196-ds-XaA" id="pS2-cz-vG8"/>
                         <outlet property="next1" destination="86Q-mp-Yxg" id="VFl-LW-P77"/>
+                        <outlet property="slider" destination="kfd-vm-3dq" id="L8Q-di-Dvr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQB-w4-cS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
