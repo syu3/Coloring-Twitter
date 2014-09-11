@@ -91,10 +91,12 @@
 -(IBAction)slider1{
     NSLog(@"slderが呼ばれているよ");
 
+    sl = slider.value;
+    sl = sl * 10;
+    sl = sl / 10;
+
     
-    double val = floor(slider.value*10);
-    sl = val / 10;
-        NSLog(@"%f",sl);
+    NSLog(@"%.1f",sl);
     
     
     
@@ -122,18 +124,58 @@
     ope = 0;
 }
 -(IBAction)green{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"jump01" ofType:@"mp3"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    if(url){
+        NSError *err = nil;
+        player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
+    }
+    [player play];
+
     ope = 1;
 }
 -(IBAction)blue{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"jump01" ofType:@"mp3"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    if(url){
+        NSError *err = nil;
+        player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
+    }
+    [player play];
+
     ope = 2;
 }
 -(IBAction)yellow{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"jump01" ofType:@"mp3"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    if(url){
+        NSError *err = nil;
+        player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
+    }
+    [player play];
+
     ope = 3;
 }
 -(IBAction)black{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"jump01" ofType:@"mp3"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    if(url){
+        NSError *err = nil;
+        player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
+    }
+    [player play];
+
     ope = 4;
 }
 -(IBAction)white{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"jump01" ofType:@"mp3"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    if(url){
+        NSError *err = nil;
+        player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&err];
+    }
+    [player play];
+
     ope = 5;
 }
 //画面に指をタッチしたときの処理
