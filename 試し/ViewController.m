@@ -18,6 +18,7 @@
     int ope;
     int number;
     AVAudioPlayer*player;
+    UIImage *trimmedImage;
 
     
 }
@@ -25,10 +26,35 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    NSLog(@"slderが呼ばれているよ");
+    
+
+    
+    
+    NSLog(@"%.1f",sl);
+    
+    
+    [slider addTarget:self action:@selector(hoge:)
+ forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:slider];
+    
+    
+    
+    
+    slider.value = 1.0;
+    sl = slider.value;
+    
+    
+    
+    
+    
     back1.hidden = YES;
     slider.maximumValue = 1.0;
     slider.minimumValue = 0.1;
     NSLog(@"%d",hyojo);
+    
     switch (hyojo) {
         case 1:
             imageview.image = [UIImage imageNamed:@"ら1.png"];
@@ -98,19 +124,21 @@
 //}
 }
 
--(IBAction)slider1{
-    NSLog(@"slderが呼ばれているよ");
 
+
+
+
+
+
+
+
+
+-(void)hoge:(UISlider*)slider{
     sl = slider.value;
-    sl = sl * 10;
-    sl = sl / 10;
-
-    
     NSLog(@"%.1f",sl);
-    
-    
-    
 }
+    
+    
 
 
 -(IBAction)dai{
@@ -227,22 +255,22 @@
     }
     switch (ope) {
         case 0:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0, 1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0,sl);
             break;
         case 1:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 1.0, 0.0, 1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 1.0, 0.0, sl);
             break;
         case 2:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 1.0, 1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 1.0, sl);
             break;
         case 3:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 0.0, 1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 0.0, sl);
             break;
         case 4:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.2, 0.2, 0.2,1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.2, 0.2, 0.2,sl);
             break;
         case 5:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 1.0,1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 1.0,sl);
             break;
            
         default:
@@ -297,7 +325,7 @@
     // 切り抜いた画像を作成する。
     CGImageRef srcImageRef = [srcImage CGImage];
     CGImageRef trimmedImageRef = CGImageCreateWithImageInRect(srcImageRef, trimArea);
-    UIImage *trimmedImage = [UIImage imageWithCGImage:trimmedImageRef];
+    trimmedImage = [UIImage imageWithCGImage:trimmedImageRef];
     
     // 描画を終了します。
     
@@ -351,6 +379,26 @@
     
     [self presentModalViewController:twitter animated:YES];
 }
+
+
+
+
+
+- (IBAction)line
+{
+    NSLog(@"LINEが押されたよ");
+    UIPasteboard *pasteboard =  [UIPasteboard generalPasteboard];
+    //[pasteboard setData:UIImageJPEGRepresentation(image, 1.0) forPasteboardType:@"public.jpeg"];
+    //→JPEGではできない模様　PNGならOK。
+    [pasteboard setData:UIImagePNGRepresentation(image) forPasteboardType:trimmedImage];
+    //PNGで！！！
+    
+    NSString *urlString = [NSString stringWithFormat:@"line://msg/image/%@",pasteboard.name];
+    NSURL *url = [NSURL URLWithString:urlString];
+    [[UIApplication sharedApplication] openURL:url];}
+
+
+
 -(IBAction)next{
     back1.hidden = NO;
     imag.image = [UIImage imageNamed:@"white2.png"];
