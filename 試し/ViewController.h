@@ -41,6 +41,7 @@
     IBOutlet UIImageView*next1;
 
 }
+- (void)postImageToLine:(NSString *)imageName imageType:(NSUInteger)imageType;
 -(IBAction)red;
 -(IBAction)green;
 -(IBAction)blue;

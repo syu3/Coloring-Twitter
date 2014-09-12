@@ -10,6 +10,10 @@
 #import <QuartzCore/QuartzCore.h>
 
 #import "IllustrationViewController.h"
+typedef NS_ENUM(NSUInteger,imageExId){
+    JPEG = 0,
+    PNG = 1
+};
 
 @interface ViewController ()
 
@@ -52,7 +56,7 @@
     
     back1.hidden = YES;
     slider.maximumValue = 1.0;
-    slider.minimumValue = 0.1;
+    slider.minimumValue = 0.0;
     NSLog(@"%d",hyojo);
     
     switch (hyojo) {
@@ -381,18 +385,20 @@
 }
 
 
-
-
-
-- (IBAction)line
++ (void)postImageToLine:(NSString *)imageName imageType:(NSUInteger)imageType
 {
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    [pasteboard setData:UIImageJPEGRepresentation(trimmedImage, 0.5) forPasteboardType:trimmedImage];
-    NSString *string = [NSString stringWithFormat:@"line://msg/image/%@",pasteboard.name];
-    NSURL *url = [NSURL URLWithString:string];
-    if ([[UIApplication sharedApplication] canOpenURL:url]) {
-        [[UIApplication sharedApplication] openURL:url];
+    if (imageType == JPEG) {
+        [pasteboard setData:UIImageJPEGRepresentation([UIImage imageNamed:imageName], 1) forPasteboardType:@"public.jpeg"];
+    } else if (imageType == PNG) {
+        [pasteboard setData:UIImagePNGRepresentation([UIImage imageNamed:imageName]) forPasteboardType:@"public.png"];
     }
+    NSString *LineUrlString = [NSString stringWithFormat:@"line://msg/image/%@", pasteboard.name];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LineUrlString]];
+}
+
+
+    
 
 
 
