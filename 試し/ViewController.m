@@ -386,16 +386,13 @@
 
 - (IBAction)line
 {
-    NSLog(@"LINEが押されたよ");
-    UIPasteboard *pasteboard =  [UIPasteboard generalPasteboard];
-    //[pasteboard setData:UIImageJPEGRepresentation(image, 1.0) forPasteboardType:@"public.jpeg"];
-    //→JPEGではできない模様　PNGならOK。
-    [pasteboard setData:UIImagePNGRepresentation(image) forPasteboardType:trimmedImage];
-    //PNGで！！！
-    
-    NSString *urlString = [NSString stringWithFormat:@"line://msg/image/%@",pasteboard.name];
-    NSURL *url = [NSURL URLWithString:urlString];
-    [[UIApplication sharedApplication] openURL:url];}
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+    [pasteboard setData:UIImageJPEGRepresentation(trimmedImage, 0.5) forPasteboardType:trimmedImage];
+    NSString *string = [NSString stringWithFormat:@"line://msg/image/%@",pasteboard.name];
+    NSURL *url = [NSURL URLWithString:string];
+    if ([[UIApplication sharedApplication] canOpenURL:url]) {
+        [[UIApplication sharedApplication] openURL:url];
+    }
 
 
 
