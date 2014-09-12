@@ -25,41 +25,51 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    back1.hidden = YES;
     slider.maximumValue = 1.0;
     slider.minimumValue = 0.1;
     NSLog(@"%d",hyojo);
     switch (hyojo) {
         case 1:
-            imageview.image = [UIImage imageNamed:@"ライオン　１笑顔.png"];
+            imageview.image = [UIImage imageNamed:@"ら1.png"];
 
-            image.frame = CGRectMake(0,0,50,50);
-            [image addSubview:image];
-
+            yohaku.hidden = NO;
+            yohaku1.hidden = NO;
             
             break;
         case 2:
-            imageview.image = [UIImage imageNamed:@"ゾウ　１笑顔.png"];
+            imageview.image = [UIImage imageNamed:@"ぞ1.png"];
+            yohaku.hidden = YES;
+            yohaku1.hidden = YES;
 
             
             break;
 
         case 3:
             imageview.image = [UIImage imageNamed:@"ひ1.png"];
+            yohaku.hidden = YES;
+            yohaku1.hidden = YES;
             
             break;
 
         case 4:
-            imageview.image = [UIImage imageNamed:@"雪だるま全身　１笑顔.png"];
+            imageview.image = [UIImage imageNamed:@"ゆ1.png"];
+            yohaku.hidden = YES;
+            yohaku1.hidden = YES;
             
             break;
 
         case 5:
-            imageview.image = [UIImage imageNamed:@"飛行機　１笑顔.png"];
+            imageview.image = [UIImage imageNamed:@"ひこ1.png"];
+            yohaku.hidden = YES;
+            yohaku1.hidden = YES;
             
             break;
 
         case 6:
-            imageview.image = [UIImage imageNamed:@"車　１笑顔.png"];
+            imageview.image = [UIImage imageNamed:@"く1.png"];
+            yohaku.hidden = YES;
+            yohaku1.hidden = YES;
             
             break;
 
@@ -114,7 +124,7 @@
 }
 -(IBAction)red{
 
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"jump01" ofType:@"mp3"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"button75" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:path];
     if(url){
         NSError *err = nil;
@@ -124,7 +134,7 @@
     ope = 0;
 }
 -(IBAction)green{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"jump01" ofType:@"mp3"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"button75" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:path];
     if(url){
         NSError *err = nil;
@@ -135,7 +145,7 @@
     ope = 1;
 }
 -(IBAction)blue{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"jump01" ofType:@"mp3"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"button75" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:path];
     if(url){
         NSError *err = nil;
@@ -146,7 +156,7 @@
     ope = 2;
 }
 -(IBAction)yellow{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"jump01" ofType:@"mp3"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"button75" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:path];
     if(url){
         NSError *err = nil;
@@ -157,7 +167,7 @@
     ope = 3;
 }
 -(IBAction)black{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"jump01" ofType:@"mp3"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"button75" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:path];
     if(url){
         NSError *err = nil;
@@ -168,7 +178,7 @@
     ope = 4;
 }
 -(IBAction)white{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"jump01" ofType:@"mp3"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"button75" ofType:@"mp3"];
     NSURL *url = [NSURL fileURLWithPath:path];
     if(url){
         NSError *err = nil;
@@ -217,22 +227,22 @@
     }
     switch (ope) {
         case 0:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0, sl);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0, 1.0);
             break;
         case 1:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 1.0, 0.0, sl);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 1.0, 0.0, 1.0);
             break;
         case 2:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 1.0, sl);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 1.0, 1.0);
             break;
         case 3:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 0.0, sl);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 0.0, 1.0);
             break;
         case 4:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.2, 0.2, 0.2, sl);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.2, 0.2, 0.2,1.0);
             break;
         case 5:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 1.0,sl);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 1.0,1.0);
             break;
            
         default:
@@ -281,7 +291,7 @@
     // 描画した内容をUIImageとして受け取ります。
     UIImage *srcImage = UIGraphicsGetImageFromCurrentImageContext();
 
-    CGRect trimArea = CGRectMake(10, 200, 800, 550);
+    CGRect trimArea = CGRectMake(10, 200, 800, 850);
     
     // CoreGraphicsの機能を用いて、
     // 切り抜いた画像を作成する。
@@ -342,6 +352,7 @@
     [self presentModalViewController:twitter animated:YES];
 }
 -(IBAction)next{
+    back1.hidden = NO;
     imag.image = [UIImage imageNamed:@"white2.png"];
     canvas.image = imag;
     
@@ -355,33 +366,33 @@
     NSLog(@"next");
     number1= number1+1;
     if (hyojo == 1&&number1 == 1) {
-            imageview.image = [UIImage imageNamed:@"ライオン　2笑顔.png"];
+            imageview.image = [UIImage imageNamed:@"ら2.png"];
         back1.alpha = 1.0;
     }else if (hyojo == 1&&number1 == 2) {
-        imageview.image = [UIImage imageNamed:@"ライオン　3ムスッと.png"];
+        imageview.image = [UIImage imageNamed:@"ら3.png"];
     }else if (hyojo == 1&&number1 == 3) {
-        imageview.image = [UIImage imageNamed:@"ライオン　4怒.png"];
+        imageview.image = [UIImage imageNamed:@"ら4.png"];
     }else if (hyojo == 1&&number1 == 4) {
-        imageview.image = [UIImage imageNamed:@"ライオン　5ニコニコ"];
+        imageview.image = [UIImage imageNamed:@"ら5.png"];
     }else if (hyojo == 1&&number1 == 5) {
-        imageview.image = [UIImage imageNamed:@"ライオン　6泣.png"];
+        imageview.image = [UIImage imageNamed:@"ら6.png"];
         next1.alpha = 0.0;
     
     }else if (hyojo == 2&&number1 == 0) {
-        imageview.image = [UIImage imageNamed:@"ゾウ　１笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ぞ1.png"];
     }else if (hyojo == 2&&number1 == 1) {
-        imageview.image = [UIImage imageNamed:@"ゾウ　2笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ぞ2.png"];
     }else if (hyojo == 2&&number1 == 2) {
-        imageview.image = [UIImage imageNamed:@"ゾウ　3ムスッと.png"];
+        imageview.image = [UIImage imageNamed:@"ぞ3.png"];
     }else if (hyojo == 2&&number1 == 3) {
-        imageview.image = [UIImage imageNamed:@"ゾウ　4怒.png"];
+        imageview.image = [UIImage imageNamed:@"ぞ4.png"];
     }else if (hyojo == 2&&number1 == 4) {
-        imageview.image = [UIImage imageNamed:@"ゾウ　5ニコニコ.png"];
+        imageview.image = [UIImage imageNamed:@"ぞ5.png"];
     }else if (hyojo == 2&&number1 == 5) {
-        imageview.image = [UIImage imageNamed:@"ゾウ　６泣.png"];
+        imageview.image = [UIImage imageNamed:@"ぞ6.png"];
         
     }else if (hyojo == 2&&number1 == 6) {
-        imageview.image = [UIImage imageNamed:@"ゾウ　7泣.png"];
+        imageview.image = [UIImage imageNamed:@"ぞ7.png"];
                next1.alpha = 0.0;
         
     }else if (hyojo == 3&&number1 == 1) {
@@ -401,49 +412,49 @@
                next1.alpha = 0.0;
         
     }else if (hyojo == 4&&number1 == 1) {
-        imageview.image = [UIImage imageNamed:@"雪だるま全身　2笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ゆ2.png"];
     }else if (hyojo == 4&&number1 == 2) {
-        imageview.image = [UIImage imageNamed:@"雪だるま全身　3ムスッと.png"];
+        imageview.image = [UIImage imageNamed:@"ゆ3.png"];
     }else if (hyojo == 4&&number1 == 3) {
-        imageview.image = [UIImage imageNamed:@"雪だるま全身　4.png"];
+        imageview.image = [UIImage imageNamed:@"ゆ4.png"];
     }else if (hyojo == 4&&number1 == 4) {
-        imageview.image = [UIImage imageNamed:@"雪だるま全身　5怒.png"];
+        imageview.image = [UIImage imageNamed:@"ゆ5.png"];
     }else if (hyojo == 4&&number1 == 5) {
-        imageview.image = [UIImage imageNamed:@"雪だるま全身　6焦.png"];
+        imageview.image = [UIImage imageNamed:@"ゆ6.png"];
         
     }else if (hyojo == 4&&number1 == 6) {
-        imageview.image = [UIImage imageNamed:@"雪だるま全身　７泣.png"];
+        imageview.image = [UIImage imageNamed:@"ゆ6.png"];
                next1.alpha = 0.0;
         
     }else if (hyojo == 5&&number1 == 1) {
-        imageview.image = [UIImage imageNamed:@"飛行機　2笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ひこ2.png"];
         
     }else if (hyojo == 5&&number1 == 2) {
-        imageview.image = [UIImage imageNamed:@"飛行機　3ムスッと.png"];
+        imageview.image = [UIImage imageNamed:@"ひこ3.png"];
     }else if (hyojo == 5&&number1 == 3) {
-        imageview.image = [UIImage imageNamed:@"飛行機　4ニコニコ.png"];
+        imageview.image = [UIImage imageNamed:@"ひこ4.png"];
     }else if (hyojo == 5&&number1 == 4) {
-        imageview.image = [UIImage imageNamed:@"飛行機　5怒.png"];
+        imageview.image = [UIImage imageNamed:@"ひこ5.png"];
     }else if (hyojo == 5&&number1 == 5) {
-        imageview.image = [UIImage imageNamed:@"飛行機　6泣.png"];
+        imageview.image = [UIImage imageNamed:@"ひこ6.png"];
         
     }else if (hyojo == 5&&number1 == 6) {
-        imageview.image = [UIImage imageNamed:@"飛行機　7焦.png"];
+        imageview.image = [UIImage imageNamed:@"ひこ7.png"];
                next1.alpha = 0.0;
     }
     else if (hyojo == 6&&number1 == 1) {
-        imageview.image = [UIImage imageNamed:@"車　2笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"く2.png"];
     }else if (hyojo == 6&&number1 == 2) {
-        imageview.image = [UIImage imageNamed:@"車　3ムスッと.png"];
+        imageview.image = [UIImage imageNamed:@"く3.png"];
     }else if (hyojo == 6&&number1 == 3) {
-        imageview.image = [UIImage imageNamed:@"車　4.png"];
+        imageview.image = [UIImage imageNamed:@"く4.png"];
     }else if (hyojo == 6&&number1 == 4) {
-        imageview.image = [UIImage imageNamed:@"車　5怒.png"];
+        imageview.image = [UIImage imageNamed:@"く5.png"];
     }else if (hyojo == 6&&number1 == 5) {
-        imageview.image = [UIImage imageNamed:@"車　6焦.png"];
+        imageview.image = [UIImage imageNamed:@"く6.png"];
         
     }else if (hyojo == 6&&number1 == 6) {
-        imageview.image = [UIImage imageNamed:@"車　7泣.png"];
+        imageview.image = [UIImage imageNamed:@"く7.png"];
                next1.alpha = 0.0;
         
     }
@@ -467,16 +478,16 @@
     }
     if (hyojo == 1&&number1 == 0) {
 
-        imageview.image = [UIImage imageNamed:@"ライオン　１笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ら1.png"];
         
     }else if (hyojo == 1&&number1 == 1) {
-        imageview.image = [UIImage imageNamed:@"ライオン　2笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ら2.png"];
     }else if (hyojo == 1&&number1 == 2) {
-        imageview.image = [UIImage imageNamed:@"ライオン　3ムスッと.png"];
+        imageview.image = [UIImage imageNamed:@"ら3.png"];
     }else if (hyojo == 1&&number1 == 3) {
-        imageview.image = [UIImage imageNamed:@"ライオン　4怒.png"];
+        imageview.image = [UIImage imageNamed:@"ら4.png"];
     }else if (hyojo == 1&&number1 == 4) {
-        imageview.image = [UIImage imageNamed:@"ライオン　5ニコニコ.png"];
+        imageview.image = [UIImage imageNamed:@"ら5.png"];
         next1.alpha = 1.0;
     }
     
@@ -484,32 +495,32 @@
     
     
     else if (hyojo == 2&&number1 == 0) {
-        imageview.image = [UIImage imageNamed:@"ゾウ　１笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ぞ1.png"];
     }else if (hyojo == 2&&number1 == 1) {
         
-        imageview.image = [UIImage imageNamed:@"ゾウ　2笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ぞ2.png"];
         
     }else if (hyojo == 2&&number1 == 2) {
-        imageview.image = [UIImage imageNamed:@"ゾウ　3ムスッと.png"];
+        imageview.image = [UIImage imageNamed:@"ぞ3.png"];
     }else if (hyojo == 2&&number1 == 3) {
-        imageview.image = [UIImage imageNamed:@"ゾウ　4怒.png"];
+        imageview.image = [UIImage imageNamed:@"ぞ4.png"];
     }else if (hyojo == 2&&number1 == 4) {
-        imageview.image = [UIImage imageNamed:@"ゾウ　5ニコニコ.png"];
+        imageview.image = [UIImage imageNamed:@"ぞ5.png"];
     }else if (hyojo == 2&&number1 == 5) {
-        imageview.image = [UIImage imageNamed:@"ゾウ　６泣.png"];
+        imageview.image = [UIImage imageNamed:@"ぞ6.png"];
                 next1.alpha = 1.0;
     }else if (hyojo == 3&&number1 == 0) {
-        imageview.image = [UIImage imageNamed:@"ひまわり　１笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ひ1.png"];
     }else if (hyojo == 3&&number1 == 1) {
-        imageview.image = [UIImage imageNamed:@"ひまわり　2笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ひ2.png"];
     }else if (hyojo == 3&&number1 == 2) {
-        imageview.image = [UIImage imageNamed:@"ひまわり　3ムスッと.png"];
+        imageview.image = [UIImage imageNamed:@"ひ3.png"];
     }else if (hyojo == 3&&number1 == 3) {
-        imageview.image = [UIImage imageNamed:@"ひまわり　4ニコニコ.png"];
+        imageview.image = [UIImage imageNamed:@"ひ4.png"];
     }else if (hyojo == 3&&number1 == 4) {
-        imageview.image = [UIImage imageNamed:@"ひまわり　5怒.png"];
+        imageview.image = [UIImage imageNamed:@"ひ5.png"];
     }else if (hyojo == 3&&number1 == 5) {
-        imageview.image = [UIImage imageNamed:@"ひまわり　6焦.png"];
+        imageview.image = [UIImage imageNamed:@"ひ6.png"];
                 next1.alpha = 1.0;
     }
     
@@ -521,17 +532,17 @@
     
     
     else if (hyojo == 4&&number1 == 0) {
-        imageview.image = [UIImage imageNamed:@"雪だるま全身　１笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ゆ1.png"];
     }else if (hyojo == 4&&number1 == 1) {
-        imageview.image = [UIImage imageNamed:@"雪だるま全身　2笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ゆ2.png"];
     }else if (hyojo == 4&&number1 == 2) {
-        imageview.image = [UIImage imageNamed:@"雪だるま全身　3ムスッと.png"];
+        imageview.image = [UIImage imageNamed:@"ゆ3.png"];
     }else if (hyojo == 4&&number1 == 3) {
-        imageview.image = [UIImage imageNamed:@"雪だるま全身　4.png"];
+        imageview.image = [UIImage imageNamed:@"ゆ4.png"];
     }else if (hyojo == 4&&number1 == 4) {
-        imageview.image = [UIImage imageNamed:@"雪だるま全身　5怒.png"];
+        imageview.image = [UIImage imageNamed:@"ゆ5.png"];
     }else if (hyojo == 4&&number1 == 5) {
-        imageview.image = [UIImage imageNamed:@"雪だるま全身　6焦.png"];
+        imageview.image = [UIImage imageNamed:@"ゆ6.png"];
                 next1.alpha = 1.0;
     }
     
@@ -542,17 +553,17 @@
     
     
     else if (hyojo == 5&&number1 == 0) {
-        imageview.image = [UIImage imageNamed:@"飛行機　１笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ひこ1.png"];
     }else if (hyojo == 5&&number1 == 1) {
-        imageview.image = [UIImage imageNamed:@"飛行機　2笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"ひこ2.png"];
     }else if (hyojo == 5&&number1 == 2) {
-        imageview.image = [UIImage imageNamed:@"飛行機　3ムスッと.png"];
+        imageview.image = [UIImage imageNamed:@"ひこ3.png"];
     }else if (hyojo == 5&&number1 == 3) {
-        imageview.image = [UIImage imageNamed:@"飛行機　4ニコニコ.png"];
+        imageview.image = [UIImage imageNamed:@"ひこ4.png"];
     }else if (hyojo == 5&&number1 == 4) {
-        imageview.image = [UIImage imageNamed:@"飛行機　5怒.png"];
+        imageview.image = [UIImage imageNamed:@"ひこ5.png"];
     }else if (hyojo == 5&&number1 == 5) {
-        imageview.image = [UIImage imageNamed:@"飛行機　6泣.png"];
+        imageview.image = [UIImage imageNamed:@"ひこ6.png"];
                 next1.alpha = 1.0;
     }
     
@@ -565,17 +576,17 @@
     
 
     else if (hyojo == 6&&number1 == 0) {
-        imageview.image = [UIImage imageNamed:@"車　１笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"く1.png"];
     }else if (hyojo == 6&&number1 == 1) {
-        imageview.image = [UIImage imageNamed:@"車　2笑顔.png"];
+        imageview.image = [UIImage imageNamed:@"く2.png"];
     }else if (hyojo == 6&&number1 == 2) {
-        imageview.image = [UIImage imageNamed:@"車　3ムスッと.png"];
+        imageview.image = [UIImage imageNamed:@"く3.png"];
     }else if (hyojo == 6&&number1 == 3) {
-        imageview.image = [UIImage imageNamed:@"車　4.png"];
+        imageview.image = [UIImage imageNamed:@"く4.png"];
     }else if (hyojo == 6&&number1 == 4) {
-        imageview.image = [UIImage imageNamed:@"車　5怒.png"];
+        imageview.image = [UIImage imageNamed:@"く5.png"];
     }else if (hyojo == 6&&number1 == 5) {
-        imageview.image = [UIImage imageNamed:@"車　6焦.png"];
+        imageview.image = [UIImage imageNamed:@"く6.png"];
                 next1.alpha = 1.0;
     }
 
