@@ -239,10 +239,6 @@
                                     <action selector="dai" destination="t6Y-a0-jhi" eventType="touchUpInside" id="dbG-78-ITn"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Qi-ko-xHJ">
-                                <rect key="frame" x="73" y="283" width="105" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -255,7 +251,6 @@
                         <outlet property="canvas" destination="ANK-KD-mPC" id="mpp-eN-Ai4"/>
                         <outlet property="imageview" destination="196-ds-XaA" id="pS2-cz-vG8"/>
                         <outlet property="next1" destination="86Q-mp-Yxg" id="VFl-LW-P77"/>
-                        <outlet property="slider" destination="0Qi-ko-xHJ" id="q11-RJ-iwL"/>
                         <outlet property="yohaku" destination="Asr-gX-ydh" id="T4P-c0-V0X"/>
                         <outlet property="yohaku1" destination="2g5-dY-5Hy" id="5Ut-Av-J7M"/>
                     </connections>

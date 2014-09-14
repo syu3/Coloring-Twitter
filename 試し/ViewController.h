@@ -39,6 +39,7 @@
     int number6;
     IBOutlet UIImageView*back1;
     IBOutlet UIImageView*next1;
+    IBOutlet UIImageView*imageview1;
 
 }
 - (void)postImageToLine:(NSString *)imageName imageType:(NSUInteger)imageType;

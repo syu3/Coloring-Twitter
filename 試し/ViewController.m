@@ -10,10 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 #import "IllustrationViewController.h"
-typedef NS_ENUM(NSUInteger,imageExId){
-    JPEG = 0,
-    PNG = 1
-};
+
 
 @interface ViewController ()
 
@@ -259,22 +256,22 @@ typedef NS_ENUM(NSUInteger,imageExId){
     }
     switch (ope) {
         case 0:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0,sl);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0,1.0);
             break;
         case 1:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 1.0, 0.0, sl);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 1.0, 0.0,1.0);
             break;
         case 2:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 1.0, sl);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 1.0,1.0);
             break;
         case 3:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 0.0, sl);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 0.0, 1.0);
             break;
         case 4:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.2, 0.2, 0.2,sl);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.2, 0.2, 0.2,1.0);
             break;
         case 5:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 1.0,sl);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 1.0,1.0);
             break;
            
         default:
@@ -385,17 +382,20 @@ typedef NS_ENUM(NSUInteger,imageExId){
 }
 
 
-+ (void)postImageToLine:(NSString *)imageName imageType:(NSUInteger)imageType
+- (IBAction)line
 {
+//trimmedImage = CGAffineTransformMakeRotation(M_PI * 90 / 180.0);  // 90度回転
+
+
+    
+    NSLog(@"LINEが押されたよ");
+    [self tweet];
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    if (imageType == JPEG) {
-        [pasteboard setData:UIImageJPEGRepresentation([UIImage imageNamed:imageName], 1) forPasteboardType:@"public.jpeg"];
-    } else if (imageType == PNG) {
-        [pasteboard setData:UIImagePNGRepresentation([UIImage imageNamed:imageName]) forPasteboardType:@"public.png"];
-    }
+    [pasteboard setData:UIImagePNGRepresentation(trimmedImage) forPasteboardType:@"public.png"];
     NSString *LineUrlString = [NSString stringWithFormat:@"line://msg/image/%@", pasteboard.name];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LineUrlString]];
 }
+
 
 
     
