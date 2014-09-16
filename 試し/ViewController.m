@@ -384,14 +384,67 @@
 
 - (IBAction)line
 {
-//trimmedImage = CGAffineTransformMakeRotation(M_PI * 90 / 180.0);  // 90度回転
-
-
+    [self tweet];
+        
     
     NSLog(@"LINEが押されたよ");
-    [self tweet];
+    
+    
+    
+    
+    
+//    // 画面に表示されている画像をimageプロパティで取得する
+//    UIImage *img = trimmedImage;
+//    // グラフィック機能で編集するためのオブジェクトを取得する
+//    CGImageRef imgRef = [img CGImage];
+//    
+//    // コンテキストの編集を開始する
+//    UIGraphicsBeginImageContext(CGSizeMake(img.size.height, img.size.width));
+//    // グラフィック編集用のコンテキストを作成
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    // 画像の回転
+//    CGFloat angle = M_PI_2;
+//    CGContextRotateCTM(context, angle);
+//    // 回転させて画像をRAM上に描画（画面上ではない）
+//    CGContextDrawImage(context,
+//                       CGRectMake(0, 0, img.size.width, img.size.height), imgRef);
+//    
+//    // 現在描画しているUIImageオブジェクトを取得
+//
+//    // コンテキストの編集を終了する
+//    UIGraphicsEndImageContext();
+//    
+//    // 回転させた加増をimageプロパティに設定
+//    trimmedImage = img;
+//
+//    
+    
+    
+    
+    
+    
+//    CGImageRef      imgRef = [trimmedImage CGImage];
+//    CGContextRef    context;
+//    
+//    UIGraphicsBeginImageContextWithOptions(CGSizeMake(trimmedImage.size.height, trimmedImage.size.width), YES, trimmedImage.scale);
+//    context = UIGraphicsGetCurrentContext();
+//    CGContextTranslateCTM(context, trimmedImage.size.height, trimmedImage.size.width);
+//    CGContextScaleCTM(context, 1, -1);
+//    CGContextRotateCTM(context, M_PI_2);
+//    CGContextDrawImage(context, CGRectMake(0, 0, trimmedImage.size.width, trimmedImage.size.height), imgRef);
+//UIImage*result = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+
+    
+    
+    
+    
+ uiimage = [UIImage imageWithCGImage:trimmedImage.CGImage scale:trimmedImage.scale orientation:UIImageOrientationRight];
+    
+    
+
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    [pasteboard setData:UIImagePNGRepresentation(trimmedImage) forPasteboardType:@"public.png"];
+    [pasteboard setData:UIImagePNGRepresentation(uiimage) forPasteboardType:@"public.png"];
     NSString *LineUrlString = [NSString stringWithFormat:@"line://msg/image/%@", pasteboard.name];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LineUrlString]];
 }
