@@ -23,7 +23,7 @@
     IBOutlet UIImageView *canvas;
     CGPoint touchPoint;
     UIImage*capure;
-
+    UIImage*lineimage;
     int rgb;
         int c;
         UIImageView*tweetImageView;

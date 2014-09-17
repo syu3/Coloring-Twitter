@@ -259,7 +259,7 @@
             CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0,1.0);
             break;
         case 1:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 1.0, 0.0,1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 28, 195, 0.0,1.0);
             break;
         case 2:
             CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 1.0,1.0);
@@ -379,15 +379,53 @@
     [twitter addImage:trimmedImage];
     
     [self presentModalViewController:twitter animated:YES];
+    
+    
+
+    
 }
 
 
 - (IBAction)line
 {
+    
+
     [self tweet];
         
     
     NSLog(@"LINEが押されたよ");
+    
+    
+    // キャプチャ対象をWindowにします。
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    
+    // キャプチャ画像を描画する対象を生成します。
+    UIGraphicsBeginImageContextWithOptions(window.bounds.size, NO, 0.0f);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    // Windowの現在の表示内容を１つずつ描画して行きます。
+    for (UIWindow *aWindow in [[UIApplication sharedApplication] windows]) {
+        [aWindow.layer renderInContext:context];
+    }
+    
+    // 描画した内容をUIImageとして受け取ります。
+    UIImage *srcImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    CGRect trimArea = CGRectMake(10, 200, 800, 850);
+    
+    // CoreGraphicsの機能を用いて、
+    // 切り抜いた画像を作成する。
+    CGImageRef srcImageRef = [srcImage CGImage];
+    CGImageRef trimmedImageRef = CGImageCreateWithImageInRect(srcImageRef, trimArea);
+    trimmedImage = [UIImage imageWithCGImage:trimmedImageRef];
+    
+    // 描画を終了します。
+    
+    UIGraphicsEndImageContext();
+    
+    lineimage = [UIImage imageWithCGImage:trimmedImage.CGImage scale:trimmedImage.scale orientation:UIImageOrientationLeft];
+    
+    
     
     
     
@@ -435,18 +473,27 @@
 //UIImage*result = UIGraphicsGetImageFromCurrentImageContext();
 //    UIGraphicsEndImageContext();
 
+
+
     
-    
-    
-    
- uiimage = [UIImage imageWithCGImage:trimmedImage.CGImage scale:trimmedImage.scale orientation:UIImageOrientationRight];
     
     
 
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    [pasteboard setData:UIImagePNGRepresentation(uiimage) forPasteboardType:@"public.png"];
+    
+    
+
+
+    [pasteboard setData:UIImagePNGRepresentation(lineimage) forPasteboardType:@"public.png"];
     NSString *LineUrlString = [NSString stringWithFormat:@"line://msg/image/%@", pasteboard.name];
+    
+    
+
+    
+    
+    
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LineUrlString]];
+    
 }
 
 
