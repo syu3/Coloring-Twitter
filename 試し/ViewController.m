@@ -302,8 +302,7 @@
                                                    message:message delegate:nil cancelButtonTitle:@"確認" otherButtonTitles:nil, nil];
     [alert show];
 }
-
--(IBAction)tweet{
+-(void)rectimage{
     
     // キャプチャ対象をWindowにします。
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
@@ -319,7 +318,7 @@
     
     // 描画した内容をUIImageとして受け取ります。
     UIImage *srcImage = UIGraphicsGetImageFromCurrentImageContext();
-
+    
     CGRect trimArea = CGRectMake(10, 200, 800, 850);
     
     // CoreGraphicsの機能を用いて、
@@ -333,170 +332,34 @@
     UIGraphicsEndImageContext();
     
     trimmedImage = [UIImage imageWithCGImage:trimmedImage.CGImage scale:trimmedImage.scale orientation:UIImageOrientationLeft];
-    
-    
-    
-//    // 元の画像。ここではtest.pngという画像があるとします。
-//    trimmedImage = trimmedImage;
-//        CGContextRef context1 = UIGraphicsGetCurrentContext();
-//    CGContextTranslateCTM(context1, trimmedImage.size.width/2, trimmedImage.size.height/2); // 回転の中心点を移動
-//    CGContextScaleCTM(context1, 1.0, -1.0); // Y軸方向を補正
-//    
-//    float radian = 45 * M_PI / 180; // 45°回転させたい場合
-//    CGContextRotateCTM(context1, radian);
-//    CGContextDrawImage(UIGraphicsGetCurrentContext(), CGRectMake(-trimmedImage.size.width/2, -trimmedImage.size.height/2, trimmedImage.size.width, trimmedImage.size.height), trimmedImage                                                                                                                                               .CGImage);
-//    
-//    UIImage *rotatedImage = UIGraphicsGetImageFromCurrentImageContext();
-//    UIGraphicsEndImageContext();
-//    
-//    // UIImageViewに回転後の画像を設定
-//    UIImageView *imageView = [[UIImageView alloc] init];
-//    imageView.image = rotatedImage;
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-//    CGRect rect = CGRectMake(0, 30, 320, 380);
-//    UIGraphicsBeginImageContext(rect.size);
-//    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
-//    capure = UIGraphicsGetImageFromCurrentImageContext();
-//    UIGraphicsEndImageContext();
-//    
     UIImageWriteToSavedPhotosAlbum(trimmedImage, nil, nil, nil);
     UIGraphicsEndImageContext();
+}
+- (IBAction)line
+{
+    [self rectimage];
+    NSLog(@"LINEが押されたよ");
+    
+     lineimage = [UIImage imageWithCGImage:trimmedImage.CGImage scale:trimmedImage.scale orientation:UIImageOrientationLeft];
+    
+    
+    
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+    [pasteboard setData:UIImagePNGRepresentation(lineimage)
+      forPasteboardType:@"public.png"];
+    NSString *LineUrlString = [NSString stringWithFormat:@"line://msg/image/%@", pasteboard.name];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LineUrlString]];
+}
+
+
+-(IBAction)tweet{
+    [self rectimage];
     SLComposeViewController *twitter = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
     [twitter setInitialText:@"こんな絵を描きました。"];
     [twitter addImage:trimmedImage];
     
     [self presentModalViewController:twitter animated:YES];
-    
-    
-
-    
 }
-
-
-- (IBAction)line
-{
-    
-
-    [self tweet];
-        
-    
-    NSLog(@"LINEが押されたよ");
-    
-    
-    // キャプチャ対象をWindowにします。
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-    
-    // キャプチャ画像を描画する対象を生成します。
-    UIGraphicsBeginImageContextWithOptions(window.bounds.size, NO, 0.0f);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    // Windowの現在の表示内容を１つずつ描画して行きます。
-    for (UIWindow *aWindow in [[UIApplication sharedApplication] windows]) {
-        [aWindow.layer renderInContext:context];
-    }
-    
-    // 描画した内容をUIImageとして受け取ります。
-    UIImage *srcImage = UIGraphicsGetImageFromCurrentImageContext();
-    
-    CGRect trimArea = CGRectMake(10, 200, 800, 850);
-    
-    // CoreGraphicsの機能を用いて、
-    // 切り抜いた画像を作成する。
-    CGImageRef srcImageRef = [srcImage CGImage];
-    CGImageRef trimmedImageRef = CGImageCreateWithImageInRect(srcImageRef, trimArea);
-    trimmedImage = [UIImage imageWithCGImage:trimmedImageRef];
-    
-    // 描画を終了します。
-    
-    UIGraphicsEndImageContext();
-    
-    lineimage = [UIImage imageWithCGImage:trimmedImage.CGImage scale:trimmedImage.scale orientation:UIImageOrientationLeft];
-    
-    
-    
-    
-    
-    
-    
-//    // 画面に表示されている画像をimageプロパティで取得する
-//    UIImage *img = trimmedImage;
-//    // グラフィック機能で編集するためのオブジェクトを取得する
-//    CGImageRef imgRef = [img CGImage];
-//    
-//    // コンテキストの編集を開始する
-//    UIGraphicsBeginImageContext(CGSizeMake(img.size.height, img.size.width));
-//    // グラフィック編集用のコンテキストを作成
-//    CGContextRef context = UIGraphicsGetCurrentContext();
-//    // 画像の回転
-//    CGFloat angle = M_PI_2;
-//    CGContextRotateCTM(context, angle);
-//    // 回転させて画像をRAM上に描画（画面上ではない）
-//    CGContextDrawImage(context,
-//                       CGRectMake(0, 0, img.size.width, img.size.height), imgRef);
-//    
-//    // 現在描画しているUIImageオブジェクトを取得
-//
-//    // コンテキストの編集を終了する
-//    UIGraphicsEndImageContext();
-//    
-//    // 回転させた加増をimageプロパティに設定
-//    trimmedImage = img;
-//
-//    
-    
-    
-    
-    
-    
-//    CGImageRef      imgRef = [trimmedImage CGImage];
-//    CGContextRef    context;
-//    
-//    UIGraphicsBeginImageContextWithOptions(CGSizeMake(trimmedImage.size.height, trimmedImage.size.width), YES, trimmedImage.scale);
-//    context = UIGraphicsGetCurrentContext();
-//    CGContextTranslateCTM(context, trimmedImage.size.height, trimmedImage.size.width);
-//    CGContextScaleCTM(context, 1, -1);
-//    CGContextRotateCTM(context, M_PI_2);
-//    CGContextDrawImage(context, CGRectMake(0, 0, trimmedImage.size.width, trimmedImage.size.height), imgRef);
-//UIImage*result = UIGraphicsGetImageFromCurrentImageContext();
-//    UIGraphicsEndImageContext();
-
-
-
-    
-    
-    
-
-    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    
-    
-
-
-    [pasteboard setData:UIImagePNGRepresentation(lineimage) forPasteboardType:@"public.png"];
-    NSString *LineUrlString = [NSString stringWithFormat:@"line://msg/image/%@", pasteboard.name];
-    
-    
-
-    
-    
-    
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LineUrlString]];
-    
-}
-
-
 
     
 
