@@ -259,7 +259,7 @@
             CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0,1.0);
             break;
         case 1:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 28, 195, 0.0,1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.3, 0.7, 0.0,1.0);
             break;
         case 2:
             CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 1.0,1.0);
