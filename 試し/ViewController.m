@@ -13,7 +13,6 @@
 
 
 @interface ViewController ()
-
 @end
 @implementation ViewController{
     int ope;
@@ -256,22 +255,22 @@
     }
     switch (ope) {
         case 0:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 0.0, 0.0,1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.9, 0.0, 0.0,sl);
             break;
         case 1:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.3, 0.7, 0.0,1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.6, 0.0,sl);
             break;
         case 2:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 1.0,1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.0, 0.0, 0.8,sl);
             break;
         case 3:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 0.0, 1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 0.0, sl);
             break;
         case 4:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.2, 0.2, 0.2,1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0.2, 0.2, 0.2,sl);
             break;
         case 5:
-            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 1.0,1.0);
+            CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 1.0, 1.0, 1.0,sl);
             break;
            
         default:
@@ -303,7 +302,6 @@
     [alert show];
 }
 -(void)rectimage{
-    
     // キャプチャ対象をWindowにします。
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
     
@@ -333,15 +331,40 @@
     
     trimmedImage = [UIImage imageWithCGImage:trimmedImage.CGImage scale:trimmedImage.scale orientation:UIImageOrientationLeft];
     UIImageWriteToSavedPhotosAlbum(trimmedImage, nil, nil, nil);
+  UIGraphicsEndImageContext();
+}
+-(void)linevoid{
+
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(context, trimmedImage.size.width/2, trimmedImage.size.height/2); // 回転の中心点を移動
+    CGContextScaleCTM(context, 1.0, -1.0); // Y軸方向を補正
+    
+    float radian = -45 * M_PI / 180; // 45°回転させたい場合
+    CGContextRotateCTM(context, radian);
+    CGContextDrawImage(UIGraphicsGetCurrentContext(), CGRectMake(-trimmedImage.size.width/2, -trimmedImage.size.height/2, trimmedImage.size.width, trimmedImage.size.height), trimmedImage.CGImage);
+    
+    UIImage *rotatedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
+    
+    // UIImageViewに回転後の画像を設定
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.image = rotatedImage;
+    lineimage = imageview.image;
 }
 - (IBAction)line
 {
-    [self rectimage];
+    [self linevoid];
     NSLog(@"LINEが押されたよ");
+
     
-     lineimage = [UIImage imageWithCGImage:trimmedImage.CGImage scale:trimmedImage.scale orientation:UIImageOrientationLeft];
     
+    
+    
+    
+    
+    
+
+
     
     
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];

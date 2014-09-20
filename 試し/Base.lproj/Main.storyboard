@@ -20,24 +20,24 @@
                                 <rect key="frame" x="1" y="0.0" width="480" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ら1.png" translatesAutoresizingMaskIntoConstraints="NO" id="196-ds-XaA">
-                                <rect key="frame" x="56" y="-27" width="424" height="374"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="く7.png" translatesAutoresizingMaskIntoConstraints="NO" id="196-ds-XaA">
+                                <rect key="frame" x="93" y="-27" width="387" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white2.png" translatesAutoresizingMaskIntoConstraints="NO" id="TtD-NR-Abq">
+                                <rect key="frame" x="-4" y="303" width="485" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white2.png" translatesAutoresizingMaskIntoConstraints="NO" id="wO3-ep-XIu">
-                                <rect key="frame" x="0.0" y="0.0" width="485" height="7"/>
+                                <rect key="frame" x="0.0" y="0.0" width="485" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white2.png" translatesAutoresizingMaskIntoConstraints="NO" id="2g5-dY-5Hy">
-                                <rect key="frame" x="-2" y="-27" width="485" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white2.png" translatesAutoresizingMaskIntoConstraints="NO" id="XyH-Cb-Quj">
-                                <rect key="frame" x="466" y="-6" width="15" height="326"/>
+                                <rect key="frame" x="-2" y="-12" width="485" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Asr-gX-ydh">
-                                <rect key="frame" x="8" y="283" width="485" height="55"/>
+                                <rect key="frame" x="-4" y="286" width="485" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white2.png" translatesAutoresizingMaskIntoConstraints="NO" id="hRz-6g-9Bl">
@@ -172,7 +172,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="line" destination="t6Y-a0-jhi" eventType="touchUpInside" id="ObE-jP-LmY"/>
+                                    <action selector="line" destination="t6Y-a0-jhi" eventType="touchUpInside" id="rn5-rn-byN"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tyu.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dpz-Uu-ee8">
@@ -224,7 +224,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="shou" destination="t6Y-a0-jhi" eventType="touchUpInside" id="U6N-nE-FC1"/>
                                     <action selector="tyu" destination="t6Y-a0-jhi" eventType="touchUpInside" id="MRj-uE-NEA"/>
                                 </connections>
                             </button>
@@ -239,6 +238,10 @@
                                     <action selector="dai" destination="t6Y-a0-jhi" eventType="touchUpInside" id="dbG-78-ITn"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="li3-DX-Aer">
+                                <rect key="frame" x="73" y="283" width="73" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -251,13 +254,14 @@
                         <outlet property="canvas" destination="ANK-KD-mPC" id="mpp-eN-Ai4"/>
                         <outlet property="imageview" destination="196-ds-XaA" id="pS2-cz-vG8"/>
                         <outlet property="next1" destination="86Q-mp-Yxg" id="VFl-LW-P77"/>
+                        <outlet property="slider" destination="li3-DX-Aer" id="hvY-UM-gJJ"/>
                         <outlet property="yohaku" destination="Asr-gX-ydh" id="T4P-c0-V0X"/>
                         <outlet property="yohaku1" destination="2g5-dY-5Hy" id="5Ut-Av-J7M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQB-w4-cS5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1544" y="-376"/>
+            <point key="canvasLocation" x="-1530" y="-368"/>
         </scene>
         <!--Illustration View Controller-->
         <scene sceneID="8mo-Sp-dgV">
@@ -442,8 +446,8 @@
         <image name="white.png" width="295" height="131"/>
         <image name="white2.png" width="1024" height="1024"/>
         <image name="yellow.png" width="295" height="131"/>
+        <image name="く7.png" width="480" height="360"/>
         <image name="ひまわり　１笑顔イラスト.png" width="441" height="581"/>
-        <image name="ら1.png" width="460" height="320"/>
         <image name="ゾウ　１笑顔イラスト.png" width="442" height="384"/>
         <image name="ライオン　１笑顔イラスト.png" width="468" height="554"/>
         <image name="車　１笑顔イラスト.png" width="426" height="369"/>
@@ -456,6 +460,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hsX-re-jWz"/>
+        <segue reference="I4w-iy-w4a"/>
     </inferredMetricsTieBreakers>
 </document>
