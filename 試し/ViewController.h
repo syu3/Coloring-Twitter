@@ -16,7 +16,7 @@
     IBOutlet UIImageView*yohaku1;
     UIImageView*imag;
     float sl;
-
+    int line;
     IBOutlet UIImageView *canvas;
     CGPoint touchPoint;
     UIImage*capure;

@@ -14,7 +14,8 @@
 
 @interface ViewController ()
 @end
-@implementation ViewController{
+@implementation ViewController
+{
     int ope;
     int number;
     AVAudioPlayer*player;
@@ -26,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     
     NSLog(@"slderが呼ばれているよ");
     
@@ -333,47 +334,27 @@
     UIImageWriteToSavedPhotosAlbum(trimmedImage, nil, nil, nil);
   UIGraphicsEndImageContext();
 }
--(void)linevoid{
 
+
+
+-(void)linevoid{
+    UIGraphicsBeginImageContext:CGRectMake(trimmedImage.size.width, trimmedImage.size.height, -trimmedImage.size.width, -trimmedImage.size.height);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextTranslateCTM(context, trimmedImage.size.width/2, trimmedImage.size.height/2); // 回転の中心点を移動
     CGContextScaleCTM(context, 1.0, -1.0); // Y軸方向を補正
-    
     float radian = -45 * M_PI / 180; // 45°回転させたい場合
     CGContextRotateCTM(context, radian);
-    CGContextDrawImage(UIGraphicsGetCurrentContext(), CGRectMake(-trimmedImage.size.width/2, -trimmedImage.size.height/2, trimmedImage.size.width, trimmedImage.size.height), trimmedImage.CGImage);
-    
+    CGContextDrawImage(UIGraphicsGetCurrentContext(), CGRectMake(-trimmedImage.size.width, -trimmedImage.size.height, trimmedImage.size.width, trimmedImage.size.height), trimmedImage.CGImage);
     UIImage *rotatedImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
+
     // UIImageViewに回転後の画像を設定
     UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.image = rotatedImage;
-    lineimage = imageview.image;
+    trimmedImage= rotatedImage;
+    trimmedImage = imageview.image;
+    
+ 
+    
 }
-- (IBAction)line
-{
-    [self linevoid];
-    NSLog(@"LINEが押されたよ");
-
-    
-    
-    
-    
-    
-    
-    
-
-
-    
-    
-    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    [pasteboard setData:UIImagePNGRepresentation(lineimage)
-      forPasteboardType:@"public.png"];
-    NSString *LineUrlString = [NSString stringWithFormat:@"line://msg/image/%@", pasteboard.name];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LineUrlString]];
-}
-
 
 -(IBAction)tweet{
     [self rectimage];
@@ -385,6 +366,17 @@
 }
 
     
+- (IBAction)line
+{
+    [self linevoid];
+    NSLog(@"LINEが押されたよ");
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+    [pasteboard setData:UIImagePNGRepresentation(trimmedImage)
+      forPasteboardType:@"public.png"];
+    NSString *LineUrlString = [NSString stringWithFormat:@"line://msg/image/%@", pasteboard.name];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LineUrlString]];
+}
+
 
 
 
