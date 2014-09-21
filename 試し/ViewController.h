@@ -21,6 +21,7 @@
     CGPoint touchPoint;
     UIImage*capure;
     UIImage*lineimage;
+    UIImage*twiterimg;
     int rgb;
         int c;
         UIImageView*tweetImageView;
@@ -28,7 +29,7 @@
     IBOutlet UIImageView*white21;
     IBOutlet UIImageView*white22;
     IBOutlet UIImageView*white23;
-    UIImage *imageView;
+    
     int number1;
     int number2;
     int number3;

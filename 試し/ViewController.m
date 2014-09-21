@@ -332,31 +332,13 @@
     
     trimmedImage = [UIImage imageWithCGImage:trimmedImage.CGImage scale:trimmedImage.scale orientation:UIImageOrientationLeft];
     UIImageWriteToSavedPhotosAlbum(trimmedImage, nil, nil, nil);
-  UIGraphicsEndImageContext();
+    UIGraphicsEndImageContext();
 }
 
 
 
--(void)linevoid{
 
-    UIGraphicsBeginImageContext:CGRectMake(trimmedImage.size.width, trimmedImage.size.height, -trimmedImage.size.width, -trimmedImage.size.height);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextTranslateCTM(context, trimmedImage.size.width/2, trimmedImage.size.height/2); // 回転の中心点を移動
-    CGContextScaleCTM(context, 1.0, -1.0); // Y軸方向を補正
-    float radian = -45 * M_PI / 180; // 45°回転させたい場合
-    CGContextRotateCTM(context, radian);
-    CGContextDrawImage(UIGraphicsGetCurrentContext(), CGRectMake(-trimmedImage.size.width, -trimmedImage.size.height, trimmedImage.size.width, trimmedImage.size.height), trimmedImage.CGImage);
-    UIImage *rotatedImage = UIGraphicsGetImageFromCurrentImageContext();
 
-    UIImageView *imageView = [[UIImageView alloc] init];
-    trimmedImage= rotatedImage;
-    trimmedImage = imageView.image;
-    //        ここが大文字↑
-    //前のやつでは、ここを小文字にしていたので、色のついていないイラストが表示されていたんだと思います。
-
- 
-    
-}
 
 -(IBAction)tweet{
     [self rectimage];
@@ -367,17 +349,69 @@
     [self presentModalViewController:twitter animated:YES];
 }
 
-    
+
 - (IBAction)line
 {
-    [self linevoid];
+    //UIGraphicsBeginImageContext:CGRectMake(trimmedImage.size.width, trimmedImage.size.height, -trimmedImage.size.width, -trimmedImage.size.height);
+    //    CGContextRef context = UIGraphicsGetCurrentContext();
+    //    CGContextTranslateCTM(context, trimmedImage.size.width/2, trimmedImage.size.height/2); // 回転の中心点を移動
+    //    CGContextScaleCTM(context, 1.0, -1.0); // Y軸方向を補正
+    //    float radian = -45 * M_PI / 180; // 45°回転させたい場合
+    //    CGContextRotateCTM(context, radian);
+    //    CGContextDrawImage(UIGraphicsGetCurrentContext(), CGRectMake(-trimmedImage.size.width, -trimmedImage.size.height, trimmedImage.size.width, trimmedImage.size.height), trimmedImage.CGImage);
+    //    trimmedImage = UIGraphicsGetImageFromCurrentImageContext();
+    //
+    //
+    
+    
+    
+    
+    
+    [self rectimage];
+    
+    
+    
+    
+    
+    
+    UIGraphicsBeginImageContext(self.view.bounds.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextRotateCTM(context, 0 * M_PI/180);
+    
+    [trimmedImage drawInRect:CGRectMake(1, 1.5,trimmedImage.size.width, trimmedImage.size.height)];
+    
+    
+    
+    
+    // リサイズ前UIImage
+    // リサイズ後UIImage
+    CGFloat width = 700;  // リサイズ後幅のサイズ
+    CGFloat height = 600;  // リサイズ後高さのサイズ
+    
+    UIGraphicsBeginImageContext(CGSizeMake(width, height));
+    [trimmedImage drawInRect:CGRectMake(0, 0, width, height)];
+    UIImage * final_img = UIGraphicsGetImageFromCurrentImageContext();
+    
+    
+    
+    
+    UIGraphicsEndImageContext();
+    
+    
+    
+    
+    
+    
+    
+    
     NSLog(@"LINEが押されたよ");
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    [pasteboard setData:UIImagePNGRepresentation(trimmedImage)
+    [pasteboard setData:UIImagePNGRepresentation(final_img)
       forPasteboardType:@"public.png"];
     NSString *LineUrlString = [NSString stringWithFormat:@"line://msg/image/%@", pasteboard.name];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:LineUrlString]];
 }
+
 
 
 
