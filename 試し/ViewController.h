@@ -28,6 +28,7 @@
     IBOutlet UIImageView*white21;
     IBOutlet UIImageView*white22;
     IBOutlet UIImageView*white23;
+    UIImage *imageView;
     int number1;
     int number2;
     int number3;
@@ -40,7 +41,6 @@
     UIImage*uiimage;
 
 }
-- (void)postImageToLine:(NSString *)imageName imageType:(NSUInteger)imageType;
 -(IBAction)red;
 -(IBAction)green;
 -(IBAction)blue;

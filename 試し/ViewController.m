@@ -338,6 +338,7 @@
 
 
 -(void)linevoid{
+
     UIGraphicsBeginImageContext:CGRectMake(trimmedImage.size.width, trimmedImage.size.height, -trimmedImage.size.width, -trimmedImage.size.height);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextTranslateCTM(context, trimmedImage.size.width/2, trimmedImage.size.height/2); // 回転の中心点を移動
@@ -347,11 +348,12 @@
     CGContextDrawImage(UIGraphicsGetCurrentContext(), CGRectMake(-trimmedImage.size.width, -trimmedImage.size.height, trimmedImage.size.width, trimmedImage.size.height), trimmedImage.CGImage);
     UIImage *rotatedImage = UIGraphicsGetImageFromCurrentImageContext();
 
-    // UIImageViewに回転後の画像を設定
     UIImageView *imageView = [[UIImageView alloc] init];
     trimmedImage= rotatedImage;
-    trimmedImage = imageview.image;
-    
+    trimmedImage = imageView.image;
+    //        ここが大文字↑
+    //前のやつでは、ここを小文字にしていたので、色のついていないイラストが表示されていたんだと思います。
+
  
     
 }
