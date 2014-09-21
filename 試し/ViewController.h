@@ -11,7 +11,7 @@
 #import <Social/Social.h>
 #import <AVFoundation/AVFoundation.h>
 @interface ViewController : UIViewController{
-    IBOutlet UISlider*slider;
+
     IBOutlet UIImageView*yohaku;
     IBOutlet UIImageView*yohaku1;
     UIImageView*imag;
@@ -29,6 +29,7 @@
     IBOutlet UIImageView*white21;
     IBOutlet UIImageView*white22;
     IBOutlet UIImageView*white23;
+    IBOutlet UISlider*slider;
     
     int number1;
     int number2;

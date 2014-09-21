@@ -254,7 +254,7 @@
                         <outlet property="canvas" destination="ANK-KD-mPC" id="mpp-eN-Ai4"/>
                         <outlet property="imageview" destination="196-ds-XaA" id="pS2-cz-vG8"/>
                         <outlet property="next1" destination="86Q-mp-Yxg" id="VFl-LW-P77"/>
-                        <outlet property="slider" destination="li3-DX-Aer" id="hvY-UM-gJJ"/>
+                        <outlet property="slider" destination="li3-DX-Aer" id="yaN-It-Tad"/>
                         <outlet property="yohaku" destination="Asr-gX-ydh" id="T4P-c0-V0X"/>
                         <outlet property="yohaku1" destination="2g5-dY-5Hy" id="5Ut-Av-J7M"/>
                     </connections>
@@ -460,6 +460,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="I4w-iy-w4a"/>
+        <segue reference="hsX-re-jWz"/>
     </inferredMetricsTieBreakers>
 </document>

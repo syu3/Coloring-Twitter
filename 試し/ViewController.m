@@ -488,7 +488,7 @@
         imageview.image = [UIImage imageNamed:@"ゆ6.png"];
         
     }else if (hyojo == 4&&number1 == 6) {
-        imageview.image = [UIImage imageNamed:@"ゆ6.png"];
+        imageview.image = [UIImage imageNamed:@"ゆ7.png"];
                next1.alpha = 0.0;
         
     }else if (hyojo == 5&&number1 == 1) {
@@ -530,7 +530,8 @@
 }
 -(IBAction)back{
     rgb = 0;
-
+    imag.image = [UIImage imageNamed:@"white2.png"];
+    canvas.image = imag;
 
     number1 = number1-1;
     if (number1 == 0) {

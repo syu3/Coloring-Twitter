@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1CE2F019CEDC3700248358 /* ひこ7.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1CE2EF19CEDC3700248358 /* ひこ7.png */; };
+		4B1CE2F219CEDE9A00248358 /* く1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B1CE2F119CEDE9A00248358 /* く1.png */; };
 		4B554D6F1967CEDF00033579 /* twitter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B554D6E1967CEDF00033579 /* twitter.jpg */; };
 		4B554D711967CEE300033579 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B554D701967CEE300033579 /* back.png */; };
 		4B5DF35419AF16E900D57A26 /* white2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B5DF35319AF16E900D57A26 /* white2.png */; };
@@ -31,7 +33,6 @@
 		4BD0918819C2AEE2006AE394 /* ひこ4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0918119C2AEE2006AE394 /* ひこ4.png */; };
 		4BD0918919C2AEE2006AE394 /* ひこ5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0918219C2AEE2006AE394 /* ひこ5.png */; };
 		4BD0918A19C2AEE2006AE394 /* ひこ6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0918319C2AEE2006AE394 /* ひこ6.png */; };
-		4BD0918B19C2AEE2006AE394 /* ひこ7.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0918419C2AEE2006AE394 /* ひこ7.png */; };
 		4BD0919419C2AEEE006AE394 /* く2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0918D19C2AEEE006AE394 /* く2.png */; };
 		4BD0919519C2AEEE006AE394 /* く3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0918E19C2AEEE006AE394 /* く3.png */; };
 		4BD0919619C2AEEE006AE394 /* く4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD0918F19C2AEEE006AE394 /* く4.png */; };
@@ -47,7 +48,6 @@
 		4BD2CC2A199C5CC800278B86 /* Untitled-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD2CC29199C5CC800278B86 /* Untitled-1.png */; };
 		4BD2FBC519AEB5DC00D5402E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD2FBC419AEB5DC00D5402E /* icon.png */; };
 		4BD3F6761998441D00244668 /* IllustrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3F6751998441D00244668 /* IllustrationViewController.m */; };
-		4BD55DD919CC6EFF0014D28D /* く1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD55DD819CC6EFF0014D28D /* く1.png */; };
 		4BD55DE019CD1B680014D28D /* ら1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD55DDA19CD1B680014D28D /* ら1.png */; };
 		4BD55DE219CD1B680014D28D /* ら3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD55DDC19CD1B680014D28D /* ら3.png */; };
 		4BD55DE319CD1B680014D28D /* ら4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BD55DDD19CD1B680014D28D /* ら4.png */; };
@@ -105,6 +105,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B1CE2EF19CEDC3700248358 /* ひこ7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひこ7.png"; sourceTree = "<group>"; };
+		4B1CE2F119CEDE9A00248358 /* く1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "く1.png"; sourceTree = "<group>"; };
 		4B554D6E1967CEDF00033579 /* twitter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitter.jpg; sourceTree = "<group>"; };
 		4B554D701967CEE300033579 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		4B5DF35319AF16E900D57A26 /* white2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white2.png; sourceTree = "<group>"; };
@@ -129,7 +131,6 @@
 		4BD0918119C2AEE2006AE394 /* ひこ4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひこ4.png"; sourceTree = "<group>"; };
 		4BD0918219C2AEE2006AE394 /* ひこ5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひこ5.png"; sourceTree = "<group>"; };
 		4BD0918319C2AEE2006AE394 /* ひこ6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひこ6.png"; sourceTree = "<group>"; };
-		4BD0918419C2AEE2006AE394 /* ひこ7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひこ7.png"; sourceTree = "<group>"; };
 		4BD0918D19C2AEEE006AE394 /* く2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "く2.png"; sourceTree = "<group>"; };
 		4BD0918E19C2AEEE006AE394 /* く3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "く3.png"; sourceTree = "<group>"; };
 		4BD0918F19C2AEEE006AE394 /* く4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "く4.png"; sourceTree = "<group>"; };
@@ -146,7 +147,6 @@
 		4BD2FBC419AEB5DC00D5402E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4BD3F6741998441D00244668 /* IllustrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IllustrationViewController.h; path = ../IllustrationViewController.h; sourceTree = "<group>"; };
 		4BD3F6751998441D00244668 /* IllustrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IllustrationViewController.m; path = ../IllustrationViewController.m; sourceTree = "<group>"; };
-		4BD55DD819CC6EFF0014D28D /* く1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "く1.png"; sourceTree = "<group>"; };
 		4BD55DDA19CD1B680014D28D /* ら1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ら1.png"; sourceTree = "<group>"; };
 		4BD55DDC19CD1B680014D28D /* ら3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ら3.png"; sourceTree = "<group>"; };
 		4BD55DDD19CD1B680014D28D /* ら4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ら4.png"; sourceTree = "<group>"; };
@@ -290,7 +290,7 @@
 				4BD0918119C2AEE2006AE394 /* ひこ4.png */,
 				4BD0918219C2AEE2006AE394 /* ひこ5.png */,
 				4BD0918319C2AEE2006AE394 /* ひこ6.png */,
-				4BD0918419C2AEE2006AE394 /* ひこ7.png */,
+				4B1CE2EF19CEDC3700248358 /* ひこ7.png */,
 			);
 			name = "飛行機イラスト";
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 		4BC83FAF199B864300414D0F /* 車イラスト */ = {
 			isa = PBXGroup;
 			children = (
-				4BD55DD819CC6EFF0014D28D /* く1.png */,
+				4B1CE2F119CEDE9A00248358 /* く1.png */,
 				4BD0918D19C2AEEE006AE394 /* く2.png */,
 				4BD0918E19C2AEEE006AE394 /* く3.png */,
 				4BD0918F19C2AEEE006AE394 /* く4.png */,
@@ -548,13 +548,13 @@
 				4BE66C7D19BDC31000CF7161 /* ひ1.png in Resources */,
 				4BD0919519C2AEEE006AE394 /* く3.png in Resources */,
 				4BCE79F7199E065E00CBB8A1 /* 600.png in Resources */,
-				4BD55DD919CC6EFF0014D28D /* く1.png in Resources */,
 				4BE66C7F19BDC31000CF7161 /* ひ3.png in Resources */,
+				4B1CE2F219CEDE9A00248358 /* く1.png in Resources */,
 				4BD091A419C2C92D006AE394 /* ライオン　１笑顔イラスト.png in Resources */,
 				4BD55DF519CD44120014D28D /* yellow.png in Resources */,
 				4B554D6F1967CEDF00033579 /* twitter.jpg in Resources */,
 				4BAEA6C919A831360031E18F /* tyu.png in Resources */,
-				4BD0918B19C2AEE2006AE394 /* ひこ7.png in Resources */,
+				4B1CE2F019CEDC3700248358 /* ひこ7.png in Resources */,
 				4BD55DE219CD1B680014D28D /* ら3.png in Resources */,
 				4BEA0AEC19C1E75800C1382D /* ゆ4.png in Resources */,
 				4BD55DE319CD1B680014D28D /* ら4.png in Resources */,
